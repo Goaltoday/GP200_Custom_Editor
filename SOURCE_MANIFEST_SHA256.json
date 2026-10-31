@@ -41,8 +41,8 @@
   },
   {
     "path": "docs/BUILD.md",
-    "bytes": 1235,
-    "sha256": "3c2c348b12e5dd83a1254400401f55c2cc6c513eb1dc111c344bcf600789e19a"
+    "bytes": 1363,
+    "sha256": "d8d23f9b4861496facdb68ef6977412186468df37c1277577ba97fef48dfad85"
   },
   {
     "path": "docs/LIMITATIONS.md",
@@ -138,6 +138,226 @@
     "path": "Editor/Data/nam-a2-lite-config.json",
     "bytes": 4945,
     "sha256": "b389f13539c7252d5bad93636d1963525328d6c97737624121f523c773f6e32b"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_AMP_off_selected.png",
+    "bytes": 10292,
+    "sha256": "369731786e6eca7cb88d8dc8330d681d7b9d4c7022abcffc2bdccb9f22325bd4"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_AMP_off.png",
+    "bytes": 9971,
+    "sha256": "96d2e379410163994e499f0ae3e8b12faf337c895287696b1d1d5398e103a1fb"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_AMP_on_selected.png",
+    "bytes": 15868,
+    "sha256": "c7a96575a403eabf5de5cf7f7ab59b3f93bb9de4fcfd034eab22988fd48f3c74"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_AMP_on.png",
+    "bytes": 15847,
+    "sha256": "e81ba0091626bbc3415099da94e44a308a4b927d4429218941e6f1dd64008e5e"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_CAB_off_selected.png",
+    "bytes": 11556,
+    "sha256": "5377787d73aa2e597c9096a500dcd780ab1479d41553d74992e77074ea2735eb"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_CAB_off.png",
+    "bytes": 11257,
+    "sha256": "44b26e855eb800b9f3c60c88e728d8a18c89ecbffe38ebad5452d92f0be99679"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_CAB_on_selected.png",
+    "bytes": 17916,
+    "sha256": "fd0461273a61be874c8e1756a5ca15eb383a80e852ad2f4d207fb7fc36b60849"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_CAB_on.png",
+    "bytes": 17743,
+    "sha256": "66b4612b7bbc645ecc4ccf730e8b04175b9360d3fee851c7f89fe58e45aaf1b0"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_DLY_off_selected.png",
+    "bytes": 10702,
+    "sha256": "ad0ea6e473108c930a0e1100b4071fe4ce67c6ba361d26e6e8082ea75a1c3b54"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_DLY_off.png",
+    "bytes": 10416,
+    "sha256": "85fb5b8388c6f3641001c653bf595094254b0254bced0c254caeb13ff0c7a981"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_DLY_on_selected.png",
+    "bytes": 16900,
+    "sha256": "0ac07773ac581c2d7f230d8480083d7eb05c90508630a13f77d812efc8ecf0a1"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_DLY_on.png",
+    "bytes": 17053,
+    "sha256": "13d86abe3f44a29900f705cbdc743567126e6fd0170edc21c08673348b691e2b"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_DST_off_selected.png",
+    "bytes": 11763,
+    "sha256": "74e1c4614e31bef89202a857e8f74fc3ab55a6200b8045e9d8e90cafcfe783a1"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_DST_off.png",
+    "bytes": 11263,
+    "sha256": "c97c8718ee391e9c794976ad7782fa3db080074a7a34fef23251caab616ec7ac"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_DST_on_selected.png",
+    "bytes": 17647,
+    "sha256": "6e26b19100484e08edd15812b9cca805b7a6f46b3af371797c38ac9994ef9b6f"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_DST_on.png",
+    "bytes": 17725,
+    "sha256": "e4ed70980289a122aacd9d0441337c2d78d65952b0a5aaf186343df768c08686"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_EQ_off_selected.png",
+    "bytes": 12120,
+    "sha256": "5836688a9f41d1d5107caf649f81ddea00fe352f458499787006b3d1160ee266"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_EQ_off.png",
+    "bytes": 12107,
+    "sha256": "5323b76f29bfd4172dfd16ad7f826abda1d9f7bd16b41359a8e68d61ac5ee4f8"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_EQ_on_selected.png",
+    "bytes": 18657,
+    "sha256": "94b00c0da35be8e6f06faa1470f87541e167e1158ba0a167a1a1f252b0778024"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_EQ_on.png",
+    "bytes": 18757,
+    "sha256": "797eb607923429254550377aa9e96e32bcff8f6f50e1d5e9c773ef25da0bcdae"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_MOD_off_selected.png",
+    "bytes": 11927,
+    "sha256": "f1e342a464de063839fe6c71fe01cb20515af3927ed846c65514ac9f02759039"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_MOD_off.png",
+    "bytes": 12118,
+    "sha256": "58774b043958cfae408a8f3e96410b76166551ab9d0a1ba7eaed0f89ef1cf7c7"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_MOD_on_selected.png",
+    "bytes": 18687,
+    "sha256": "7d8152f1ef9189a76377f38d2f3aa29df39a42f82a6b7be994b04a52eb897a4e"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_MOD_on.png",
+    "bytes": 18649,
+    "sha256": "e61f865cc70f7687f8b43ab78650aef41e5031b05ab4f531e79fe215097d137f"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_NR_off_selected.png",
+    "bytes": 11277,
+    "sha256": "e3ff2d5d17531e3edcf3a5b73c1030e3cf7b8e9d78927b90b9666e7ab22b0f03"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_NR_off.png",
+    "bytes": 11387,
+    "sha256": "4f6dcb5d483fc78b7fcc2785e44d5c1d2648a252f7838bcfd81bf23394c8a30d"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_NR_on_selected.png",
+    "bytes": 17853,
+    "sha256": "cd5972541ca828fa11dbcce2c100dbb630b15df6959b22ca71898b646f81cfc2"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_NR_on.png",
+    "bytes": 17790,
+    "sha256": "5fca4f9804d354eaac4abbb75af9c21e4f6f239af3fcd07cbfd0eb5f637603fa"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_PRE_off_selected.png",
+    "bytes": 9933,
+    "sha256": "cc9b40cca83f4bd42c7af4d0e4d210b6ddc61c12851d594dbc6ea6db0cf9273c"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_PRE_off.png",
+    "bytes": 9968,
+    "sha256": "3bffe3d0f8d51a82da0a381d0e9fdb9303f7c037aeb7a3e77023b27eee349e5a"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_PRE_on_selected.png",
+    "bytes": 14707,
+    "sha256": "82296c10b253e750b5ab626bff52585dbd08ecbc28831102ade5c04fb58e027a"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_PRE_on.png",
+    "bytes": 14697,
+    "sha256": "56a5ab5914e178efcdc185fc8bc12ddf8bb44a49c406861d5c82c9e528357a3a"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_RVB_off_selected.png",
+    "bytes": 12162,
+    "sha256": "4f7adcdc647c618a912e5b1c1e62507a097436f9fccdc8e97a0fa9196310f3d6"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_RVB_off.png",
+    "bytes": 11879,
+    "sha256": "223c4c50d32c9753fb2b31c913ae9b38188c78259a681aecb1bbacbd430d5fd4"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_RVB_on_selected.png",
+    "bytes": 18768,
+    "sha256": "8902e49d45d44eb3916097da866cb1b837d538d7af4d23c89121546a3f28029e"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_RVB_on.png",
+    "bytes": 18919,
+    "sha256": "d3399db88cb1d1cff14e1fa204fb3796ddd0b3e2377e203f812e0c9df799a0bf"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_VOL_off_selected.png",
+    "bytes": 10809,
+    "sha256": "77d98092df1dfa114877197ff69fbae48b6b224315625ed39f685ee92df59080"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_VOL_off.png",
+    "bytes": 10964,
+    "sha256": "a5aa0099340aaf8e55291a5012b9f43b86035f23c4cb2b91aab03b5b66e43b47"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_VOL_on_selected.png",
+    "bytes": 16571,
+    "sha256": "0235ee08b96910e93b3ef6832333c1c859206a3d60c121476e316ab938380a84"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_VOL_on.png",
+    "bytes": 16615,
+    "sha256": "80f8c497225db29d06c31d018cd8ff079d8554338fc063894f0f196b51b612d5"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_WAH_off_selected.png",
+    "bytes": 11866,
+    "sha256": "2da82fd12291345620efecfaa8f4e5cb2ad57cab308e64a7e717db95bf520bef"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_WAH_off.png",
+    "bytes": 11551,
+    "sha256": "c99d8ba71dd660f3d967b0e029cd1c95ac8153b082840e150f098a3886940784"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_WAH_on_selected.png",
+    "bytes": 17062,
+    "sha256": "e1749230442ed6c44df8737f29ea8079ab874fa9cceb1c3845f7299046ecdf23"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_WAH_on.png",
+    "bytes": 17062,
+    "sha256": "b2729353997e83558d701bcfeb3fdb6f68ff289ed23ed6a2cef31eebae22490c"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/AMP/AC Pre 2.png",
@@ -875,6 +1095,116 @@
     "sha256": "385213210dbaf02cf5a752110ef6058078e214c2f1c7e1c2c5282c1ed847df07"
   },
   {
+    "path": "Editor/Data/OfficialImages/effects_bg/DLY/999 Echo.png",
+    "bytes": 119485,
+    "sha256": "58feec09b8b3a180bb38c6f759bf9d5e4ebcad026b1edef9efe9a3d67be77318"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/DLY/Ambience 1.png",
+    "bytes": 253969,
+    "sha256": "7c045fcf05e4e206f88894b7df27c9b2bba1da80b1911c6c9a7c93495937e45c"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/DLY/Ambience 2.png",
+    "bytes": 99120,
+    "sha256": "2834d07fe7efe0ca74a70dde29154c14df18f5a86294f06512129d4c369400e7"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/DLY/Analog.png",
+    "bytes": 122407,
+    "sha256": "79084285485412e1abb4f60732f9c6799919f745cccd03832ddfa5c6a1372b90"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/DLY/BBD Delay S.png",
+    "bytes": 401203,
+    "sha256": "ca3528bdb98e8f183a222ed2fe58c6c864b5539ba17f03694ae30f7486e26617"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/DLY/Broken Delay.png",
+    "bytes": 64382,
+    "sha256": "f4d843d71c1b9c6ddab0bbef0677a1287fdf2a885a2c3ad93b31fd48b0afa747"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/DLY/Digital Delay S.png",
+    "bytes": 337068,
+    "sha256": "bc8b626f99a17afd889370ae1fabde2245ef0cc50694c4bc89931ec0db9d3c98"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/DLY/Dual Echo.png",
+    "bytes": 680896,
+    "sha256": "23b2d176932bae3fc003603c58466365189b3180d17b2fd39168fd7f1643e09a"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/DLY/Ice Delay.png",
+    "bytes": 711671,
+    "sha256": "c9e6c8493dfaa0f2c3a4f33283652b1ac059e98e5efc7623d41ea0c769de5daf"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/DLY/Lofi Echo.png",
+    "bytes": 172720,
+    "sha256": "a1b7bd4739b3b00c46c3124e52c12908ce44bc9b6cd40ba56cd643b265b4d558"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/DLY/M-Echo.png",
+    "bytes": 138989,
+    "sha256": "dc5a2957101743e071fe778463af0667620601b57267b3daa7467c406c0483cd"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/DLY/Ping Pong.png",
+    "bytes": 201476,
+    "sha256": "8f346c0596b19c0a7fe51a411c43b42613fb59a2f18391f1eefaf187cab1493a"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/DLY/Pure.png",
+    "bytes": 230791,
+    "sha256": "f87000ee0cca1e1cda4d6a6638e8e7f3137beb82590b1226911117a7d9a68220"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/DLY/Rev Echo.png",
+    "bytes": 181764,
+    "sha256": "0dde1d8d9ad11b5f5ec7869bf5b1264be2b1ea3584ca4fde3254b49ac14f2816"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/DLY/Ring Echo.png",
+    "bytes": 129990,
+    "sha256": "a31cd95fc396877c924484c2bc318bd24f91bc85a443916a417f87ab7ef0c75a"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/DLY/Slapback.png",
+    "bytes": 94571,
+    "sha256": "449dcdc1a1c00ff7fd8adcf989f6e6e008b8d97dbef0b510bcef6e29123a0e48"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/DLY/Sweep Echo.png",
+    "bytes": 195541,
+    "sha256": "0885c50ceb73f1bcec34c1df39eac9b77b92f1ad2cffc3c49c9dbe21227c7bab"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/DLY/Sweet Echo.png",
+    "bytes": 213178,
+    "sha256": "2a67889809cd8459e49286b8cabde079365438c10b3f07374741d1fcb40dbabe"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/DLY/Tape Delay S.png",
+    "bytes": 79790,
+    "sha256": "c31851b40c3b02f6222bb7c24451b9ac70c4bb03701e0a2e45fdd395ae348406"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/DLY/Tape.png",
+    "bytes": 91871,
+    "sha256": "0ee33c73b2041ac83c52f97974b1ad4c734812ac1887e55d3f761fe638257197"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/DLY/Tube.png",
+    "bytes": 126000,
+    "sha256": "b251363054ae63ffbf9e500b317cd85681f7906d40a38e95be926279d1148b1c"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/DLY/Vintage Rack.png",
+    "bytes": 185878,
+    "sha256": "487b4afd8c5cd5a30ab374730efe121b9966f0a656fdb9439d4a0569cf3780c5"
+  },
+  {
     "path": "Editor/Data/OfficialImages/effects_bg/DST/14 Boost.png",
     "bytes": 872956,
     "sha256": "f0b2d18f147d7184d27d7e0813fb2de05bf8f4a57324972d91eb3aea45456909"
@@ -1150,6 +1480,156 @@
     "sha256": "1967098b57c56bb9a02c18cb913e7d34bdfa7e5424c019321cda243d79db7e97"
   },
   {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/A-Chorus.png",
+    "bytes": 248318,
+    "sha256": "f132515d13ae73ba678df89a77d8e9edf15fa0f2ef8642115042e2a138b5f10a"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/Auto Swell.png",
+    "bytes": 860027,
+    "sha256": "17da7528e8dc7b2d2fcf3afca546fb04e856ff8c9b9d8a990631c62e3ea3b73b"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/B-Chorus.png",
+    "bytes": 109869,
+    "sha256": "4d2c765745dc47ef8e35849af74ed30dbc1b130e348d585f0374bb74c62bb299"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/B-Jet.png",
+    "bytes": 93668,
+    "sha256": "a2bf27ae161df0e4f435f31452569e66714387b1454e1aedf9071639463157ee"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/Bass OD.png",
+    "bytes": 106639,
+    "sha256": "a628e588e4a93148405c91ef7af227fd518490cdf805356fda462aad810944eb"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/Bias Trem.png",
+    "bytes": 56725,
+    "sha256": "12a4b2d1e6cce455311d6ded5006ac9971b7c58afa9af26addb8929fe9e47c60"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/Bit Smash.png",
+    "bytes": 64448,
+    "sha256": "7d18dc7945a39cfe518a7871c9d68440d1eac12584cbb988d4e4058e4b48a0e9"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/Black Bass.png",
+    "bytes": 117260,
+    "sha256": "1ebb3a41e7e48b7fb76571236e8b06fed5edd5285791e7deee067b42d57024db"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/C-Chorus.png",
+    "bytes": 118085,
+    "sha256": "6c0df8cc0b899dcef1ea99e985ee421f159a8289b549d8efe0cd09c19e6c8fba"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/Detune.png",
+    "bytes": 84032,
+    "sha256": "913417d54ad1609700b38543c696b3a10cc614a61796a17efa302c183201d758"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/Freeze.png",
+    "bytes": 571760,
+    "sha256": "aac40d7b2808f67a3e2ec8a948ee1b6bcca3030729c23c71171c5c97b9bb1975"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/G-Chorus.png",
+    "bytes": 87035,
+    "sha256": "e2fe6b20abaa88f437af0cc486cf2354d705aa683f5c2dcfe98cfbdd48103005"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/G-Phase.png",
+    "bytes": 110188,
+    "sha256": "459310eabd8241c14eaa45ded6258b3bf3123ee1198bb06da800ec6a6c686f67"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/G-Roto.png",
+    "bytes": 166722,
+    "sha256": "d61937d315dc6181c82455c7c2731bef05b5edf11f07d606bfa19759f79ae20c"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/Hold.png",
+    "bytes": 659471,
+    "sha256": "211ab3d57ee2c87aeb6c99b80943e8888da7f4463d88ce5e95c8cdcf8ee80e37"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/Jet.png",
+    "bytes": 102178,
+    "sha256": "ef603b7bd5e11af92ba43417e40430acb67c8a8f4403dbf80df7a53eebd4d13b"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/M-Chorus.png",
+    "bytes": 107999,
+    "sha256": "0dc12d744d1fe8aabe744e2a0590f112c36d2f7c20e0036b868f0a665e4e2cd3"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/M-Vibe.png",
+    "bytes": 149520,
+    "sha256": "be082e41e7b6a1ca81e99825cae84a124e7ba5bccda6e295c38b3c8150ecb13b"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/N-Jet.png",
+    "bytes": 97629,
+    "sha256": "2b8c57036adc542536ed48783feddd5a5c5c3e788dea7f2b0bb0de5aa3ad3a4b"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/O-Phase.png",
+    "bytes": 253921,
+    "sha256": "b9eeb5eec570d91772cb0c9bc790201dc33ab34852a7c2e7ce7ee27f8c0b208b"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/O-Trem.png",
+    "bytes": 265989,
+    "sha256": "797e066909c75b16fc5b41f70afd417065c323b527ef722e488e892907c49b16"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/Pan Phase.png",
+    "bytes": 64887,
+    "sha256": "1dd595969e98d31ae18ddc527882a7e2e3868d4b62fb20022fd69b958b6bdd44"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/S-Phase.png",
+    "bytes": 118785,
+    "sha256": "0d06c2eb0e2dcb59cfaab0038027f279531dc9522021da0c770ec9c88288a0e7"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/Sine Trem.png",
+    "bytes": 148127,
+    "sha256": "396069242302149fdda985c79c7fcb4ce066acd017321e398a0375dc7403b256"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/Trem Jet.png",
+    "bytes": 194732,
+    "sha256": "7ea02946d9a5ceb498c36e84fee7fececbd482ebf8ae34d4fa5e75c279caa7c4"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/Triangle Trem.png",
+    "bytes": 140896,
+    "sha256": "66125e36de97615604b99a8fd38ea4a2b4f67ad108b3073a3599e6593f9f9119"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/V-Roto.png",
+    "bytes": 139581,
+    "sha256": "815d2878ec0ed8cfbd13bccf32dd6e959327f28022e4db674022d9c45b3da2d6"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/Vibe.png",
+    "bytes": 141821,
+    "sha256": "755c9b63e791019b2715f8606708a2f9ad0ebb3471acaec6f7ed54ea9853b228"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/Vibrato T.png",
+    "bytes": 432907,
+    "sha256": "22d2b95cac1910531a4db5cb739d4c373a5d14350facd38ca45d0f4b845ef272"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/MOD/Vibrato.png",
+    "bytes": 153593,
+    "sha256": "1e08dd71443f96bf168c9fdb7b35d0dba60e645526b455d7aaf8556ce7b6ccc7"
+  },
+  {
     "path": "Editor/Data/OfficialImages/effects_bg/NR/Auto Swell.png",
     "bytes": 561837,
     "sha256": "bca0b45465ea7e4f706cbe3e1b884e86b0257b7efbcd675a104c27e2081bcb86"
@@ -1168,6 +1648,296 @@
     "path": "Editor/Data/OfficialImages/effects_bg/NR/Gate 3.png",
     "bytes": 580394,
     "sha256": "ecdf6f84eb001dd73c62db39efdb8465c0a79f4b4770260d5e527f1d7929cff5"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/14 Boost.png",
+    "bytes": 69997,
+    "sha256": "3a88fea88ebe1caf75ffe1a62212b5fa31ca195639099c5a9fb6c8f054a4f99c"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/A-Chorus.png",
+    "bytes": 248318,
+    "sha256": "f132515d13ae73ba678df89a77d8e9edf15fa0f2ef8642115042e2a138b5f10a"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/A-Wah.png",
+    "bytes": 263373,
+    "sha256": "0edaafbbaa3e2c4932f769d0670e56b20b225f297f0c0b0547d179d8a5965336"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/AC Boost.png",
+    "bytes": 299749,
+    "sha256": "ec23e71d98b9ee5e3bcc1a851eb5fe55801b5e091b508847362fc1afa20d3e10"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/AC Refiner.png",
+    "bytes": 250525,
+    "sha256": "6fb878e7964b64e0768f064e5ecfd602776395307b83675d3f06117bb6a8d3ae"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/AC Sim.png",
+    "bytes": 121534,
+    "sha256": "a4b18b962faf5801ff3d315495f3d03cb6ae75d94962488828d0a02c5ff67b08"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/Analog.png",
+    "bytes": 122407,
+    "sha256": "79084285485412e1abb4f60732f9c6799919f745cccd03832ddfa5c6a1372b90"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/Auto Swell.png",
+    "bytes": 860027,
+    "sha256": "17da7528e8dc7b2d2fcf3afca546fb04e856ff8c9b9d8a990631c62e3ea3b73b"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/B-Boost.png",
+    "bytes": 309944,
+    "sha256": "b379c746af841f39b853247e324bab5681a85a7812a3be9bf6f0f246da1179a6"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/B-Chorus.png",
+    "bytes": 109869,
+    "sha256": "4d2c765745dc47ef8e35849af74ed30dbc1b130e348d585f0374bb74c62bb299"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/B-Jet.png",
+    "bytes": 93668,
+    "sha256": "a2bf27ae161df0e4f435f31452569e66714387b1454e1aedf9071639463157ee"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/Blues OD.png",
+    "bytes": 112964,
+    "sha256": "0335ebe616fd614ba3791810160fa49ec8fae4b1c807f4b2ae43a4ed6b9a89df"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/Boost.png",
+    "bytes": 306895,
+    "sha256": "c80bef32cc7c98054dde843cffe372bc037327b08b60aa647ef1862935eed53d"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/C-Chorus.png",
+    "bytes": 118085,
+    "sha256": "6c0df8cc0b899dcef1ea99e985ee421f159a8289b549d8efe0cd09c19e6c8fba"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/COMP.png",
+    "bytes": 322625,
+    "sha256": "d49f7ef6a14ef57a0d5773f4346b1d8e890cbc881c851ef9fad127128642047a"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/COMP4.png",
+    "bytes": 197235,
+    "sha256": "48483afaf46f35a47158382119c37fe754075da9267327b6cee7cd43d0136c4a"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/FAT BB.png",
+    "bytes": 24893,
+    "sha256": "af1f6c62b95ec1fd6cc05fa60064a542c18d5a582a9fe2815b94d860cce119bc"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/Freeze.png",
+    "bytes": 571760,
+    "sha256": "aac40d7b2808f67a3e2ec8a948ee1b6bcca3030729c23c71171c5c97b9bb1975"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/G-Chorus.png",
+    "bytes": 87035,
+    "sha256": "e2fe6b20abaa88f437af0cc486cf2354d705aa683f5c2dcfe98cfbdd48103005"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/Hammy.png",
+    "bytes": 100062,
+    "sha256": "bfc0ce77d72d44f634c3097cd334dfc37cb7609e0d540279a1c9a43ea04b2bf3"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/Harmonizer 1.png",
+    "bytes": 571356,
+    "sha256": "8b4c19ba7372aa28b5b407d6db328c424778a506b0e949cd36ba0823195c4e58"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/Harmonizer 2.png",
+    "bytes": 568581,
+    "sha256": "235c1952438e2d023216f3793c41afa311ef134f2e20c435421b553f1ae1d194"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/Hold.png",
+    "bytes": 659471,
+    "sha256": "211ab3d57ee2c87aeb6c99b80943e8888da7f4463d88ce5e95c8cdcf8ee80e37"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/Jet.png",
+    "bytes": 102178,
+    "sha256": "ef603b7bd5e11af92ba43417e40430acb67c8a8f4403dbf80df7a53eebd4d13b"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/Micro Boost.png",
+    "bytes": 54833,
+    "sha256": "54a1e97858cf7242888f45fbabbd52ec8e75e4cfe9863736c0ec877179822470"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/OCTA.png",
+    "bytes": 284797,
+    "sha256": "19ab9d733a00da23988500f2943942b30098cb37aa747a07cd8e126ff47e463e"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/OD 9.png",
+    "bytes": 115567,
+    "sha256": "ac5130652081f81ce594bd48c576779174719fc5a065a212accc1d7286bdcf6a"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/P-Bend.png",
+    "bytes": 255208,
+    "sha256": "5d8335ecfddb9995887351ea363c3e2bc8aa0ebfa6cca1dce5a035a87fd4ac52"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/P-Boost.png",
+    "bytes": 283231,
+    "sha256": "7c4f9d2c34c437310e11e59dce2831794412e0ff305117ce99d47d288dd64eab"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/Penesas.png",
+    "bytes": 133993,
+    "sha256": "9b06cd76b2fa186fa8b903c8874b2efb04896fe9e3138c9dc9557f3b28ccc6b3"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/Pitch.png",
+    "bytes": 254641,
+    "sha256": "840556cbe772ee6e9b00ce6fd2c6f3850d7a2c56f8a784c479c63acc98f66a63"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/Pure.png",
+    "bytes": 230791,
+    "sha256": "f87000ee0cca1e1cda4d6a6638e8e7f3137beb82590b1226911117a7d9a68220"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/Ring Mod.png",
+    "bytes": 250793,
+    "sha256": "58e66dcf9f028dbed80f4f313cc12cda906f3fa755d8b7ed144a00ade9e48c1d"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/Room.png",
+    "bytes": 220537,
+    "sha256": "7e5aabdc70e1ba43992c960b08b1200285eda6ceaf8a033b4b964b6c0d11fcd9"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/S-Comp.png",
+    "bytes": 70082,
+    "sha256": "bc0ae3a32a9e16b8fb92472368f1471100353e3326f294f277f3af1e85c351d9"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/S-Phase.png",
+    "bytes": 118785,
+    "sha256": "0d06c2eb0e2dcb59cfaab0038027f279531dc9522021da0c770ec9c88288a0e7"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/Saturate.png",
+    "bytes": 270301,
+    "sha256": "e8f4fc690b8e45225106ee75313131b9e146ff5440fcff9387331071d3ea2013"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/Step Filter.png",
+    "bytes": 247790,
+    "sha256": "d40b7ebb5db22f7c48ffb48853c9c03f17f7aef0d6cb3a38ffdef4b5ff427956"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/Super OD.png",
+    "bytes": 81330,
+    "sha256": "e7cbb3a7c194ac1b09f1fe7825b08def01a7af322d859effd3dea2454b894c73"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/T-Wah.png",
+    "bytes": 212120,
+    "sha256": "bfacc72c63014446e324e03fbc8b7f458854160360b9046c7c7afcbba8c8ac0d"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/Vibrato T.png",
+    "bytes": 432907,
+    "sha256": "22d2b95cac1910531a4db5cb739d4c373a5d14350facd38ca45d0f4b845ef272"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/PRE/Yellow OD.png",
+    "bytes": 79700,
+    "sha256": "30fe688d2df8768f253aa3db472ef302d3b07f57452d00217c95758587f399ac"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/RVB/Amp Spring.png",
+    "bytes": 589475,
+    "sha256": "4a15fb09083d1f00559d76b0bd25e1fdfd9d0b3b8ae7d52c38701dfaf298274e"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/RVB/Arena.png",
+    "bytes": 175694,
+    "sha256": "6094f269ec2d7cc52860fcc621ca2000e15e0b1825396a6ed675584e7e21e547"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/RVB/Church.png",
+    "bytes": 268634,
+    "sha256": "758ef79e234063ddb2dd6981b961027e65bc37c417444ee5f633495db8906d06"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/RVB/Club.png",
+    "bytes": 109150,
+    "sha256": "913ff84090d35f52fc94ade3f157f3a76f6c962856c5eb445f82b97c8e72f26c"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/RVB/Concert.png",
+    "bytes": 208706,
+    "sha256": "96895e0bbb01883e381d9ae3234330446ba9ceb6b94b51e6f14511e52a9078dd"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/RVB/Deepsea.png",
+    "bytes": 241688,
+    "sha256": "328023b5391962ba73e23c3fc7321b25f832f49164d38015fcff113f54b1adbc"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/RVB/Hall.png",
+    "bytes": 253137,
+    "sha256": "1c1913c4f92687c13dd45dbc63450b03ae2f46d8fa65ad886feaaf934db5d30e"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/RVB/N-Star.png",
+    "bytes": 259797,
+    "sha256": "dd1d904d73122a0e9027511f123eeac0a01544da5989457af1b238e383eee1d0"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/RVB/Plate.png",
+    "bytes": 249509,
+    "sha256": "2286882c0880cd41a759e044cb8ae23f82cb84e6af87f302fa7d58ec9e80fd58"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/RVB/Room.png",
+    "bytes": 220537,
+    "sha256": "7e5aabdc70e1ba43992c960b08b1200285eda6ceaf8a033b4b964b6c0d11fcd9"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/RVB/Shimmer.png",
+    "bytes": 223743,
+    "sha256": "ff8398482d9dddd6389b177f12ccf90ae4798bb0b75c65b3476e86127e8d2cd1"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/RVB/Spring.png",
+    "bytes": 259845,
+    "sha256": "d93f0de060f95748933681b9e5863ccd4c3a06d89eeabc3142e91430711f21f4"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/RVB/Studio.png",
+    "bytes": 292268,
+    "sha256": "a32825412d86f048be89c3c941e73481a5c3f91d4ec3d76ce34f1260e200bbb0"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/RVB/Sweet Space.png",
+    "bytes": 239612,
+    "sha256": "3155232426e55aa923e8f981f58b5be874a5194d435a21a8934ffac3eec520e9"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/RVB/Tube Spring.png",
+    "bytes": 630903,
+    "sha256": "a63ed5252468b85aaf14b56e92b17118a57e23b9a2ae4d64ccb5718b82dab7a6"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/VOL/Volume.png",
+    "bytes": 24063,
+    "sha256": "601a6693ff5e75e8142f0e808d53d7fd85cd7f77304f63eb1087749cbcd44a34"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/WAH/B-Wah.png",
@@ -1201,8 +1971,8 @@
   },
   {
     "path": "Editor/Gp200.Replica.csproj",
-    "bytes": 2250,
-    "sha256": "ac84dc1f22fa7f62b3b4d0e4c2b5f73ccd08bfa4b7a89058dd335668a49c30f2"
+    "bytes": 2315,
+    "sha256": "c610c8cde02d7e300d0c0bcd607efb40aeaad67abf264492b4db93867214b6f3"
   },
   {
     "path": "Editor/Source/Infrastructure/AppPaths.cs",
@@ -5206,8 +5976,8 @@
   },
   {
     "path": "scripts/build-app.ps1",
-    "bytes": 1201,
-    "sha256": "d292b84728289caf2e113f424dc3be086ee6970fc952149248a2471b6e70498c"
+    "bytes": 1908,
+    "sha256": "de2e6f017628299ebcb9634e2019542e5b0456fe7cec620616b9d140b8c109f0"
   },
   {
     "path": "scripts/build-native.ps1",

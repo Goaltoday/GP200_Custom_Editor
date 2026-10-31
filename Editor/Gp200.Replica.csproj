@@ -13,6 +13,7 @@
     <InformationalVersion>R2.Stock-Custom.CleanMenus.20261030</InformationalVersion>
     <RootNamespace>Gp200.Replica</RootNamespace>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <SatelliteResourceLanguages>es</SatelliteResourceLanguages>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Source/**/*.cs" />
