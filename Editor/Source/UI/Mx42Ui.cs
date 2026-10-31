@@ -48,6 +48,6 @@ public sealed partial class EditorWindow
     string EffectIcon(PresetDocument doc,int slot)
     {
         var info=catalog.Find(slot,doc.GetEffect(slot).Code);
-        return info?.IsNone==true?"NONE":catalog.FamilyLabel(slot,doc.GetEffect(slot).Code) is "NAM"?"AMP":catalog.FamilyLabel(slot,doc.GetEffect(slot).Code);
+        return info?.IsNone==true?"NONE":catalog.FamilyLabel(slot,doc.GetEffect(slot).Code);
     }
 }

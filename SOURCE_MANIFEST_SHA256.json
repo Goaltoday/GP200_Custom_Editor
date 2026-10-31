@@ -2251,8 +2251,8 @@
   },
   {
     "path": "Editor/Source/UI/EffectArtwork.cs",
-    "bytes": 2200,
-    "sha256": "18e2bc20de73759206e96784f77810f16f31b7e728a6a667bd4b3657c2443a81"
+    "bytes": 2289,
+    "sha256": "262880c1c0ebd2934c72ebe6896b82e052a6f42ee34412c41fe92c03664819f3"
   },
   {
     "path": "Editor/Source/UI/EqGraph.cs",
@@ -2286,8 +2286,8 @@
   },
   {
     "path": "Editor/Source/UI/Mx42Ui.cs",
-    "bytes": 3790,
-    "sha256": "cefc7d895f862bca2709bf32b2a62593a80dba3d45e9d34b0ab516134b452c44"
+    "bytes": 3724,
+    "sha256": "d4db150542ce9291952e61cf12e31aa6a6d365df7ef6cccf86c2c82cd44ed51d"
   },
   {
     "path": "Editor/Source/UI/PatchSettingsWindow.cs",
@@ -2321,8 +2321,8 @@
   },
   {
     "path": "Editor/Source/UI/SettingsWindow.cs",
-    "bytes": 13820,
-    "sha256": "e47c6e408125027b546c6eacac8d2b12e70540c70918b9da997d210939ac336b"
+    "bytes": 13284,
+    "sha256": "3bd4c696fc325b0147e5b4142e5521f2dbbdffa2322523cfab90e348ce42ac49"
   },
   {
     "path": "Editor/Source/UI/SnapToneImportWindow.cs",
@@ -5993,5 +5993,30 @@
     "path": "THIRD_PARTY_NOTICES.md",
     "bytes": 1778,
     "sha256": "cb9ff61cdbcdb820b1595f71a2124c86f8f1d3662efc1a2fc199f4e0d224ca5a"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_NAM_off_selected.png",
+    "bytes": 43732,
+    "sha256": "4130d184536f6f81a41c350b30a36ef15f55673c1247afa2c373836f2f20ed59"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_NAM_off.png",
+    "bytes": 38509,
+    "sha256": "586cafea945e938bc02cafa6d9c7c61203e903ed5b49abc94e317b6588083c92"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_NAM_on_selected.png",
+    "bytes": 43983,
+    "sha256": "f1a5705500b22b6f9f86972c6cb3cf7716a6c88c3ce45cd0a93d045f7d5614ff"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/Background/chain_icon_NAM_on.png",
+    "bytes": 39255,
+    "sha256": "94522abb6d6a71615b6cba36ab504759b2cf49066a319f4d6fc06d4a46489715"
+  },
+  {
+    "path": "Editor/Data/OfficialImages/effects_bg/NAM/NAM_SnapTone.png",
+    "bytes": 786878,
+    "sha256": "242445c3c409f8cf3983377e8c99d1e1bab7a7c29550a346ec154f2c74f8bdf7"
   }
 ]

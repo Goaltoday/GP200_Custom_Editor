@@ -8,7 +8,9 @@ public static class EffectArtwork
 {
     static readonly Dictionary<string,BitmapSource> cache=[];
     public static string Root=>Path.Combine(AppContext.BaseDirectory,"Data","OfficialImages");
-    public static string EffectPath(AlgorithmInfo algorithm)=>Path.Combine(Root,"effects_bg",algorithm.Module=="NAM"?"AMP":algorithm.Module,algorithm.ResourceName+".png");
+    public static string EffectPath(AlgorithmInfo algorithm)=>algorithm.Module=="NAM"
+        ?Path.Combine(Root,"effects_bg","NAM","NAM_"+algorithm.ResourceName+".png")
+        :Path.Combine(Root,"effects_bg",algorithm.Module,algorithm.ResourceName+".png");
     public static string ChainPath(string module,bool enabled,bool selected)=>Path.Combine(Root,"Background",$"chain_icon_{module}_{(enabled?"on":"off")}{(selected?"_selected":"")}.png");
     public static Image? Load(string path,double height)
     {
