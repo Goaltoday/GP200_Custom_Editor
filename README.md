@@ -6,6 +6,9 @@ Choose on Setting/Device profile
 This project is not an official Valeton product and is not endorsed by the hardware manufacturer.
 **Yes, it's vibecoded, but with a lot of human effort...**
 
+<img width="1349" height="872" alt="image" src="https://github.com/user-attachments/assets/20e8a7c1-31bc-4ddb-8114-2d00b086231e" />
+
+
 
 ## Features
 
