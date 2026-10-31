@@ -37,16 +37,21 @@ public sealed class PatchSettingsWindow:Window
     TextBlock? stateLabel;
 
     bool readingState;
+    readonly Func<bool> busy;
+    readonly Func<string>? editStatus;
+    bool editPending;
+    string? controllerSignature;
 
     static readonly Brush Ink=new SolidColorBrush(Color.FromRgb(234,240,247)),Panel=new SolidColorBrush(Color.FromRgb(31,42,55));
 
-    public PatchSettingsWindow(Func<PresetDocument> read,Action<Action<PresetDocument>> edit,Catalog catalog,Func<bool> busy,Func<ExpressionOperatingState?>? operatingState=null,Func<Task<ExpressionOperatingState?>>? refreshOperatingState=null)
+    public PatchSettingsWindow(Func<PresetDocument> read,Action<Action<PresetDocument>> edit,Catalog catalog,Func<bool> busy,Func<ExpressionOperatingState?>? operatingState=null,Func<Task<ExpressionOperatingState?>>? refreshOperatingState=null,Func<string>? editStatus=null)
 
     {
 
         EditorWindow.StyleDialog(this);
 
         this.operatingState=operatingState;this.refreshOperatingState=refreshOperatingState;
+        this.busy=busy;this.editStatus=editStatus;
 
         this.read=read;this.edit=edit;this.catalog=catalog;Title=UiText.T($"Patch Setting · {BankService.Position(read().Index)} · {read().Name}");Width=830;Height=535;MinWidth=760;MinHeight=470;Background=new SolidColorBrush(Color.FromRgb(16,21,28));Foreground=Ink;
 
@@ -63,6 +68,11 @@ public sealed class PatchSettingsWindow:Window
         stateTimer.Tick+=async(_,_)=>
 
         {
+            if(!busy())
+            {
+                if(editPending){editPending=false;status.Text=editStatus?.Invoke()??"Edit finished. Check the main window for the operation result.";}
+                if(sections.SelectedIndex==0&&controllerSignature!=ControllerSignature())Render();
+            }
 
             if(readingState||sections.SelectedIndex!=1||busy()||refreshOperatingState==null)return;
 
@@ -80,9 +90,9 @@ public sealed class PatchSettingsWindow:Window
 
     {
 
-        try{edit(change);if(refresh)Render();status.Text=UiText.T("Cambio aplicado. El guardado permanente se realiza desde la pantalla principal.");}
+        try{edit(change);editPending=busy();if(refresh||sections.SelectedIndex==0)Render();status.Text=editPending?"Edit pending · waiting for device verification…":editStatus?.Invoke()??UiText.T("Cambio aplicado. El guardado permanente se realiza desde la pantalla principal.");}
 
-        catch(Exception e){status.Text=e.Message;}
+        catch(Exception e){editPending=false;Render();status.Text=e.Message;}
 
     }
 
@@ -91,6 +101,7 @@ public sealed class PatchSettingsWindow:Window
     StackPanel Controllers()
 
     {
+        controllerSignature=ControllerSignature();
 
         var panel=new StackPanel();var tabs=new WrapPanel();panel.Children.Add(tabs);
 
@@ -118,6 +129,16 @@ public sealed class PatchSettingsWindow:Window
 
         panel.Children.Add(Label(UiText.T("Las casillas eligen los bloques de la asignación CTRL; no son sus interruptores de activación.")));return panel;
 
+    }
+
+    string ControllerSignature()
+    {
+        var document=read();
+        return controller+":"+string.Join(";",document.Chain.Select(owner=>
+        {
+            var effect=document.GetEffect(owner);
+            return $"{owner}:{effect.Code}:{effect.Enabled}:{CtrlAssignmentView.FamilyLabel(catalog,document,owner)}";
+        }))+":"+string.Join(";",document.Controls.Select(c=>$"{c.Slot}:{c.Mask}"));
     }
 
     StackPanel Expressions()

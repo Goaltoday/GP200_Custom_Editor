@@ -234,7 +234,8 @@ public sealed partial class EditorWindow
         var session=live;
         var window=new PatchSettingsWindow(()=>desiredLive??entry.Document,action=>{if(current==entry)Edit(action);},catalog,()=>liveBusy||livePump,
             ()=>live==session?session?.ExpressionState:null,
-            async()=>live==session&&session!=null?await session.RefreshExpressionStateAsync():null){Owner=this};window.ShowDialog();Render();
+            async()=>live==session&&session!=null?await session.RefreshExpressionStateAsync():null,
+            ()=>status.Text){Owner=this};window.ShowDialog();Render();
     }
     async Task OpenPatchAfterSettings(){if(live==null&&ReadOnlyMidi.IsDeviceAvailable())await ToggleLive(true);if(current!=null)OpenPatchSettings();}
 }

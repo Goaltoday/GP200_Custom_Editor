@@ -2246,8 +2246,8 @@
   },
   {
     "path": "Editor/Source/UI/EditorWorkspace.cs",
-    "bytes": 19884,
-    "sha256": "1b96f3bcab467707c886a07861ac69d2911fbbf6e63466e78d7fd4009d2f9b26"
+    "bytes": 19914,
+    "sha256": "6ab299c686b1786beb2072a02ab4a1773924515a1b0069921b52d26b68d5339d"
   },
   {
     "path": "Editor/Source/UI/EffectArtwork.cs",
@@ -2291,8 +2291,8 @@
   },
   {
     "path": "Editor/Source/UI/PatchSettingsWindow.cs",
-    "bytes": 14562,
-    "sha256": "298055276acc3b30ed0321c09001927d09dfc56809e942147bd89bf65feacf31"
+    "bytes": 15715,
+    "sha256": "2a5d2221cec2bee18174186f0f70546e3c58ab8dbadf4a0114bf4a7a4767c4e0"
   },
   {
     "path": "Editor/Source/UI/PresetRenameWindow.cs",
