@@ -6,8 +6,8 @@
   },
   {
     "path": ".github/workflows/build.yml",
-    "bytes": 646,
-    "sha256": "fb918911e4de441454037d7506fe5e0bea307be354279b82a927f644cafbd24a"
+    "bytes": 719,
+    "sha256": "93b353cabbcab7404cd0bb57e31f42bf6b832706526fb404f9a98d54cfe169d7"
   },
   {
     "path": ".gitignore",
@@ -41,8 +41,8 @@
   },
   {
     "path": "docs/BUILD.md",
-    "bytes": 1363,
-    "sha256": "d8d23f9b4861496facdb68ef6977412186468df37c1277577ba97fef48dfad85"
+    "bytes": 1756,
+    "sha256": "f8057d229b3ebf6f09607c12ad64b3ef6950d14a27d42beb32dc04da465cdbfc"
   },
   {
     "path": "docs/LIMITATIONS.md",
@@ -5971,13 +5971,13 @@
   },
   {
     "path": "README.md",
-    "bytes": 3550,
-    "sha256": "d62cf2501fadea608fc5b3b57a7a7485e86580033b47f6636a008899159ef9dd"
+    "bytes": 3692,
+    "sha256": "c3fe5df2e06cc8a77d04f9f0b8613a631b897bc86397065c99d18b0bc13ff228"
   },
   {
     "path": "scripts/build-app.ps1",
-    "bytes": 1908,
-    "sha256": "de2e6f017628299ebcb9634e2019542e5b0456fe7cec620616b9d140b8c109f0"
+    "bytes": 4836,
+    "sha256": "719334914f64e3d468795346dd91c16c3d61315b4273e91bfa2fef82c4e8fc8b"
   },
   {
     "path": "scripts/build-native.ps1",

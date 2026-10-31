@@ -20,15 +20,15 @@ Firmware updates and factory reset are excluded. Backup and readback do not make
 
 Windows x64 and **.NET 10 SDK with Windows Desktop support**. PowerShell 7 is recommended. No SDK, firmware image or official editor installation is bundled or needed to build.
 
-The GitHub Actions artifact is self-contained for Windows x64 and does not require the user to install .NET. Build it locally with the .NET 10 SDK:
+The GitHub Actions artifact includes a private .NET runtime for Windows x64 and does not require the user to install .NET. Runtime DLLs are stored under `runtime/`, not beside the editor executable. Build it locally with the .NET 10 SDK:
 
 ```powershell
 .\scripts\build-app.ps1
 ```
 
-Run `artifacts/app/GP200 Replica.exe`. The application can connect automatically to a connected GP-200 according to its preferences. First verify the selected Stock/Custom profile in Settings.
+Run `artifacts/app/GP200_Custom_Editor/GP200 Replica.exe`. Keep the `runtime`, `Data` and `Converter` folders alongside the executable. The application can connect automatically to a connected GP-200 according to its preferences. First verify the selected Stock/Custom profile in Settings.
 
-The GitHub Actions workflow uploads the complete self-contained application folder as a downloadable artifact. Download it from the completed workflow run under **Actions → Artifacts**, extract it to a folder, then run `GP200 Replica.exe`. The workflow does not create a GitHub Release. [Build details](docs/BUILD.md).
+The GitHub Actions artifact extracts to a short `README.txt` and a `GP200_Custom_Editor` folder. Open the folder and run `GP200 Replica.exe`; keep its contents together. The workflow does not create a GitHub Release. [Build details](docs/BUILD.md).
 
 ## Images
 
@@ -42,4 +42,4 @@ The small native conversion worker and IR resampler are included with their corr
 
 Publish the **contents of this folder**, including hidden .github/.gitignore/.gitattributes files. GitHub Desktop or Git is recommended for the vendored source tree. Do not upload the internal FUENTES handoff or its ZIP. GitHub Desktop can add this folder as a local repository and publish it. No remote repository has been created by these scripts. [Instrucciones en español](docs/PUBLICAR.md).
 
-The supplied GitHub Actions workflow builds the self-contained Windows application folder and uploads it as an artifact. It does not rebuild native components, create a GitHub Release, access a pedalboard, or flash firmware.
+The supplied GitHub Actions workflow builds the Windows application folder with its private runtime under `runtime/` and uploads it as an artifact. It does not rebuild native components, create a GitHub Release, access a pedalboard, or flash firmware.

@@ -6,7 +6,9 @@ Install the .NET 10 SDK for Windows x64, including Windows Desktop targeting pac
 .\scripts\build-app.ps1
 ```
 
-The script publishes a self-contained Windows x64 application directory at `artifacts/app/`, including `GP200 Replica.exe`, the .NET runtime and application resources. It restores only Microsoft's .NET runtime packs from nuget.org; the application uses no NuGet packages. The publish keeps Spanish satellite resources (English uses neutral resources) and omits optional symbols and `createdump.exe`. GitHub Actions runs the same build and uploads the complete folder as an artifact. It does not create a release or communicate with a pedalboard.
+The script publishes `artifacts/app/GP200_Custom_Editor/`. `GP200 Replica.exe` is a single-file, framework-dependent apphost; the matching private .NET 10 runtime installation is copied into `runtime/`. The apphost is configured to search that relative folder, so users do not need to install .NET and runtime DLLs do not clutter the app root. Project resources remain in `Data/` and `Converter/`, as expected by the editor. Keep all three folders with the executable.
+
+The build restores Microsoft's .NET runtime packs from nuget.org; the application uses no NuGet packages. It keeps Spanish satellite resources (English uses neutral resources) and omits optional symbols and `createdump.exe`. GitHub Actions uploads `README.txt` beside `GP200_Custom_Editor/`; these paths give the artifact a common root at `artifacts/app/`, so the downloaded ZIP retains the app directory. It does not create a release or communicate with a pedalboard.
 
 The optional `-Dotnet` parameter selects an installed dotnet executable.
 
