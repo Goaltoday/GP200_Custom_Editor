@@ -1,0 +1,29 @@
+# Generated outputs and local SDK state
+**/bin/
+**/obj/
+artifacts/
+build/
+.dotnet-home/
+.vs/
+*.user
+*.suo
+*.pdb
+*.log
+# User data and model libraries
+Evidence/
+Backups/
+Preferences/
+SnapTone Library/
+Native NAM/
+*.nam
+*.clo
+*.gpscene
+*.prst
+!Editor/Data/clear-default-gp200-1.8.2.prst
+*.zip
+*.zip.tmp
+.env
+.env.*
+*.pfx
+*.pem
+*.key

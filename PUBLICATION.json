@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "date": "2026-10-31",
+  "maintainer": "Goaltoday",
+  "maintainerProfile": "https://github.com/Goaltoday",
+  "license": "GPL-3.0-only",
+  "baseVersion": "R2.Stock-Custom.CleanMenus.20261030",
+  "publicProfileNames": [
+    "Stock",
+    "Custom"
+  ],
+  "nativeRuntimeBinariesReplaced": false,
+  "originalArtworkIncluded": false,
+  "unbrandedArtworkFiles": 208,
+  "artworkCategories": {
+    "AMP": 87,
+    "CAB": 60,
+    "DST": 40,
+    "EQ": 15,
+    "NR": 4,
+    "WAH": 2
+  },
+  "actionsBuildsNativeSources": false,
+  "actionsCreatesReleaseOrZip": false,
+  "firmwareIncluded": false,
+  "sdkIncluded": false,
+  "hardwareActions": 0,
+  "remoteCreated": false,
+  "scanScope": "File allowlist and credential/private-path patterns; not a legal certification or proof of absence of every possible secret",
+  "actionsUploadsRunnableAppFolder": true,
+  "actionsArtifactRetentionDays": 30,
+  "actionsSelfContained": true
+}

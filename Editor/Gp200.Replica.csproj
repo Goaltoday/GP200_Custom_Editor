@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <StartupObject>Gp200.Replica.Program</StartupObject>
+    <AssemblyName>GP200 Replica</AssemblyName>
+    <Authors>Goaltoday</Authors>
+    <Copyright>Copyright (C) 2026 Goaltoday</Copyright>
+    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+    <InformationalVersion>R2.Stock-Custom.CleanMenus.20261030</InformationalVersion>
+    <RootNamespace>Gp200.Replica</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Source/**/*.cs" />
+    <Content Include="../LICENSE" Link="LICENSE" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../COPYRIGHT" Link="COPYRIGHT" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../README.md" Link="README.md" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../THIRD_PARTY_NOTICES.md" Link="THIRD_PARTY_NOTICES.md" CopyToOutputDirectory="PreserveNewest" />
+    
+    
+    
+    <Content Include="Data\nam-a2-lite-config.json" CopyToOutputDirectory="PreserveNewest" />
+
+    <Content Include="Converter\**\*" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Data\OfficialImages\**\*" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Data\ui-es-extra.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Data\ui-en-extra.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Data\mx42-catalog.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Data\algorithms.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Data\midi-control-list.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Data\r8brain-gp200.dll" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Data\r8brain-LICENSE.txt" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Data\clear-default-gp200-1.8.2.prst" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
+

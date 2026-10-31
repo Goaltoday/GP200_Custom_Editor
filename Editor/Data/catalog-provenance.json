@@ -1,0 +1,16 @@
+{
+  "algorithm_count": 606,
+  "sources": [
+    {
+      "file": "algorithm.xml",
+      "sha256": "bddd204708194fda1501a7020bd3bad2a6b3bbcc09d2d28c5a0db3034f866da3"
+    },
+    {
+      "file": "algorithm_lt.xml",
+      "sha256": "fa26049b53c769ddda6fc4d88a4631d8157b9fae1a426cdb35940dd0f725adb4"
+    }
+  ],
+  "activeCatalog": "Official Valeton software1.8.0 archive, NSIS block609 GP200 /610 LT",
+  "sourceEvidence": "gp200-analysis/reference-official/catalog-stock-differences.json",
+  "suppliedResourcesPreserved": "gp200-analysis/resources/algorithms.json"
+}

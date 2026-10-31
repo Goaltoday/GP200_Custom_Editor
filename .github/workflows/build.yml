@@ -1,0 +1,22 @@
+name: Build self-contained Windows application folder
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Build runnable application folder
+        shell: pwsh
+        run: ./scripts/build-app.ps1
+      - name: Upload application folder
+        uses: actions/upload-artifact@v4
+        with:
+          name: GP200-Community-Editor-win-x64
+          path: artifacts/app/
+          if-no-files-found: error
+          retention-days: 30

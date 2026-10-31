@@ -1,0 +1,267 @@
+[
+  {
+    "Controller": 0,
+    "Range": "0-1",
+    "Meaning": "BANK MSB: 01-A~32-D: CC0=1, PC=0-127 33-A~64-D: CC0=0, PC=0-127"
+  },
+  {
+    "Controller": 7,
+    "Range": "0-100",
+    "Meaning": "Patch Volume"
+  },
+  {
+    "Controller": 11,
+    "Range": "0-100",
+    "Meaning": "EXP 1"
+  },
+  {
+    "Controller": 13,
+    "Range": "0-127",
+    "Meaning": "EXP1 A/B 0-63: A 64-127: B"
+  },
+  {
+    "Controller": 16,
+    "Range": "0-100",
+    "Meaning": "Quick Access Para 1"
+  },
+  {
+    "Controller": 17,
+    "Range": "0-127",
+    "Meaning": "Quick Access Knob 1 parameter adjustment: 0-63:Turn down by 1 step 64-127: Turn up by 1 step"
+  },
+  {
+    "Controller": 18,
+    "Range": "0-100",
+    "Meaning": "Quick Access Knob 2"
+  },
+  {
+    "Controller": 19,
+    "Range": "0-127",
+    "Meaning": "Quick Access Knob 2 parameter adjustment: 0-63:Turn down by 1 step 64-127: Turn up by 1 step"
+  },
+  {
+    "Controller": 20,
+    "Range": "0-100",
+    "Meaning": "Quick Access Knob  3"
+  },
+  {
+    "Controller": 21,
+    "Range": "0-127",
+    "Meaning": "Quick Access Knob 3 parameter adjustment: 0-63:Turn down by 1 step 64-127: Turn up by 1 step"
+  },
+  {
+    "Controller": 22,
+    "Range": "0-127",
+    "Meaning": "BANK - (initial mode)"
+  },
+  {
+    "Controller": 23,
+    "Range": "0-127",
+    "Meaning": "BANK + (initial mode)"
+  },
+  {
+    "Controller": 24,
+    "Range": "0-127",
+    "Meaning": "Patch -"
+  },
+  {
+    "Controller": 25,
+    "Range": "0-127",
+    "Meaning": "Patch +"
+  },
+  {
+    "Controller": 26,
+    "Range": "0-127",
+    "Meaning": "BANK - (wait mode)"
+  },
+  {
+    "Controller": 27,
+    "Range": "0-127",
+    "Meaning": "BANK +(wait mode)"
+  },
+  {
+    "Controller": 28,
+    "Range": "0-127",
+    "Meaning": "BANK (wait mode)"
+  },
+  {
+    "Controller": 48,
+    "Range": "0-127",
+    "Meaning": "PRE Module on/off: 0-63: off 64-127: on"
+  },
+  {
+    "Controller": 49,
+    "Range": "0-127",
+    "Meaning": "DST Module on/off: 0-63: off 64-127: on"
+  },
+  {
+    "Controller": 50,
+    "Range": "0-127",
+    "Meaning": "AMP Module on/off: 0-63:  off 64-127:  on"
+  },
+  {
+    "Controller": 51,
+    "Range": "0-127",
+    "Meaning": "NR Module on/off: 0-63: off 64-127: on"
+  },
+  {
+    "Controller": 52,
+    "Range": "0-127",
+    "Meaning": "CAB Module on/off: 0-63: off 64-127: on"
+  },
+  {
+    "Controller": 53,
+    "Range": "0-127",
+    "Meaning": "EQ Module on/off: 0-63: off 64-127: on"
+  },
+  {
+    "Controller": 54,
+    "Range": "0-127",
+    "Meaning": "MOD Module on/off: 0-63: off 64-127: on"
+  },
+  {
+    "Controller": 55,
+    "Range": "0-127",
+    "Meaning": "DLY Module on/off: 0-63: off 64-127: on"
+  },
+  {
+    "Controller": 56,
+    "Range": "0-127",
+    "Meaning": "RVB Module on/off: 0-63: off 64-127: on"
+  },
+  {
+    "Controller": 57,
+    "Range": "0-127",
+    "Meaning": "WAH Module on/off: 0-63: off 64-127: on"
+  },
+  {
+    "Controller": 58,
+    "Range": "0-127",
+    "Meaning": "TUNER on/off: 0-63: off 64-127: on"
+  },
+  {
+    "Controller": 59,
+    "Range": "0-127",
+    "Meaning": "LOOPER on/off: 0-63: off 64-127: on"
+  },
+  {
+    "Controller": 60,
+    "Range": "0-127",
+    "Meaning": "LOOPER Record"
+  },
+  {
+    "Controller": 61,
+    "Range": "0-127",
+    "Meaning": "LOOPER Auto Record"
+  },
+  {
+    "Controller": 62,
+    "Range": "0-127",
+    "Meaning": "Looper Play/Stop 0-63: Stop 64-127: Play"
+  },
+  {
+    "Controller": 63,
+    "Range": "0-127",
+    "Meaning": "Looper Tempo 0-63: Half-speed 64-127: Normal Speed"
+  },
+  {
+    "Controller": 64,
+    "Range": "0-127",
+    "Meaning": "Looper Playback Status 0-63: Reverse 64-127: Normal"
+  },
+  {
+    "Controller": 65,
+    "Range": "0-127",
+    "Meaning": "Delete Loop"
+  },
+  {
+    "Controller": 66,
+    "Range": "0-100",
+    "Meaning": "Looper Recording Volume"
+  },
+  {
+    "Controller": 67,
+    "Range": "0-100",
+    "Meaning": "Looper Playback Volume"
+  },
+  {
+    "Controller": 68,
+    "Range": "0-127",
+    "Meaning": "Looper Placement 0-63: Rear 64-127: Front"
+  },
+  {
+    "Controller": 69,
+    "Range": "0-127",
+    "Meaning": "CTRL 1"
+  },
+  {
+    "Controller": 70,
+    "Range": "0-127",
+    "Meaning": "CTRL 2"
+  },
+  {
+    "Controller": 71,
+    "Range": "0-127",
+    "Meaning": "CTRL 3"
+  },
+  {
+    "Controller": 72,
+    "Range": "0-127",
+    "Meaning": "CTRL 4"
+  },
+  {
+    "Controller": 73,
+    "Range": "0-1",
+    "Meaning": "Tempo MSB, Used with Cc74"
+  },
+  {
+    "Controller": 74,
+    "Range": "0-127",
+    "Meaning": "CC73=0,CC74=40-127: 40BPM-127BPM CC73=1,CC74=0-122: 128BPM-250BPM"
+  },
+  {
+    "Controller": 75,
+    "Range": "0-127",
+    "Meaning": "Tap Tempo"
+  },
+  {
+    "Controller": 76,
+    "Range": "0-127",
+    "Meaning": "CTRL  5"
+  },
+  {
+    "Controller": 77,
+    "Range": "0-127",
+    "Meaning": "CTRL  6"
+  },
+  {
+    "Controller": 78,
+    "Range": "0-127",
+    "Meaning": "CTRL  7"
+  },
+  {
+    "Controller": 79,
+    "Range": "0-127",
+    "Meaning": "CTRL  8"
+  },
+  {
+    "Controller": 92,
+    "Range": "0-100",
+    "Meaning": "Drum Machine Menu on/off: 0-63:  off 64-127:  on"
+  },
+  {
+    "Controller": 93,
+    "Range": "0-127",
+    "Meaning": "Drum Machine Play/Stop 0-63: Stop 64-127: Play"
+  },
+  {
+    "Controller": 94,
+    "Range": "0-99",
+    "Meaning": "Drum Machine Type"
+  },
+  {
+    "Controller": 95,
+    "Range": "0-100",
+    "Meaning": "Drum Machine Volume"
+  }
+]
