@@ -10,7 +10,7 @@ namespace Gp200.Replica;
 public sealed record AppPreferences
 {
     public string Language {get;init;}="en";
-    public string DeviceProfile {get;init;}="Stock";
+    public string DeviceProfile {get;init;}="MX42";
     public bool NeedsProfileSelection {get;init;}
     public static bool ProfileSelectionRequired {get;private set;}
     public static string? LoadWarning {get;private set;}

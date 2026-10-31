@@ -1096,113 +1096,113 @@
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/DLY/999 Echo.png",
-    "bytes": 119485,
-    "sha256": "58feec09b8b3a180bb38c6f759bf9d5e4ebcad026b1edef9efe9a3d67be77318"
+    "bytes": 511515,
+    "sha256": "3bd67db356b984cb75da0f234fa32d19a86edf2a9cfefbf88dc49db1ee80af9d"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/DLY/Ambience 1.png",
-    "bytes": 253969,
-    "sha256": "7c045fcf05e4e206f88894b7df27c9b2bba1da80b1911c6c9a7c93495937e45c"
+    "bytes": 549453,
+    "sha256": "fa88c07ee8a96c2a5a996361c0bba7a5042259dcb0e52bd31cd59b09813c3310"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/DLY/Ambience 2.png",
-    "bytes": 99120,
-    "sha256": "2834d07fe7efe0ca74a70dde29154c14df18f5a86294f06512129d4c369400e7"
+    "bytes": 570938,
+    "sha256": "c5eef02e2b9a95905a13da53c6d4b96a086b24c93540faacc2eaedf7a7e72369"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/DLY/Analog.png",
-    "bytes": 122407,
-    "sha256": "79084285485412e1abb4f60732f9c6799919f745cccd03832ddfa5c6a1372b90"
+    "bytes": 524412,
+    "sha256": "c38b11072de6a28845b42676f68732d150590ffc6b935371e5c96c60100f5a24"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/DLY/BBD Delay S.png",
-    "bytes": 401203,
-    "sha256": "ca3528bdb98e8f183a222ed2fe58c6c864b5539ba17f03694ae30f7486e26617"
+    "bytes": 774498,
+    "sha256": "80492f6a2bec76ded64805ae3c5b9c85e2a5be8f1c25e4ef07ca58251bb1caf2"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/DLY/Broken Delay.png",
-    "bytes": 64382,
-    "sha256": "f4d843d71c1b9c6ddab0bbef0677a1287fdf2a885a2c3ad93b31fd48b0afa747"
+    "bytes": 897018,
+    "sha256": "29d8ded6436705f5a3944989bf7b2c4115a431a81bc114a79e98c390d48527d8"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/DLY/Digital Delay S.png",
-    "bytes": 337068,
-    "sha256": "bc8b626f99a17afd889370ae1fabde2245ef0cc50694c4bc89931ec0db9d3c98"
+    "bytes": 657680,
+    "sha256": "167f10d758efe43a923ad36fec0838a7529021b4d65743d24b709af6dadeb28f"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/DLY/Dual Echo.png",
-    "bytes": 680896,
-    "sha256": "23b2d176932bae3fc003603c58466365189b3180d17b2fd39168fd7f1643e09a"
+    "bytes": 595557,
+    "sha256": "9fd4d961dc4f9cac6803872e21f67f3feb48f5fc543a3c71cb731cf8aa8c1066"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/DLY/Ice Delay.png",
-    "bytes": 711671,
-    "sha256": "c9e6c8493dfaa0f2c3a4f33283652b1ac059e98e5efc7623d41ea0c769de5daf"
+    "bytes": 843686,
+    "sha256": "d907cf001a68c23d14a55458cfd47da6512d482cdfc21ef08b857640a77e45d8"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/DLY/Lofi Echo.png",
-    "bytes": 172720,
-    "sha256": "a1b7bd4739b3b00c46c3124e52c12908ce44bc9b6cd40ba56cd643b265b4d558"
+    "bytes": 718222,
+    "sha256": "61afce0bf3676c3de284b4752627a5bb2910ca13e51db3ad2f5d3cf54e105605"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/DLY/M-Echo.png",
-    "bytes": 138989,
-    "sha256": "dc5a2957101743e071fe778463af0667620601b57267b3daa7467c406c0483cd"
+    "bytes": 410124,
+    "sha256": "75d5d2b0b74f45cd901cd976c135d73ab6f790f55a478ca821b376a3a6bed9bd"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/DLY/Ping Pong.png",
-    "bytes": 201476,
-    "sha256": "8f346c0596b19c0a7fe51a411c43b42613fb59a2f18391f1eefaf187cab1493a"
+    "bytes": 509394,
+    "sha256": "519957ff8f6e723c7e8de3ef252f287ac65fd0b734988e37ef9a95d8f9bbf703"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/DLY/Pure.png",
-    "bytes": 230791,
-    "sha256": "f87000ee0cca1e1cda4d6a6638e8e7f3137beb82590b1226911117a7d9a68220"
+    "bytes": 494934,
+    "sha256": "adfee6722e73ae4382b3aa168ca9916eb42e859480fb4a2f2f35d484978f1eaa"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/DLY/Rev Echo.png",
-    "bytes": 181764,
-    "sha256": "0dde1d8d9ad11b5f5ec7869bf5b1264be2b1ea3584ca4fde3254b49ac14f2816"
+    "bytes": 439473,
+    "sha256": "9747c320ae27756d805fdbba7ac105bd3b9d32619325b72f8c728ded82d5642f"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/DLY/Ring Echo.png",
-    "bytes": 129990,
-    "sha256": "a31cd95fc396877c924484c2bc318bd24f91bc85a443916a417f87ab7ef0c75a"
+    "bytes": 523179,
+    "sha256": "00a384f02b65b62f392b99a6fd73482748855b223f45df011cdc46be9fdbbe12"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/DLY/Slapback.png",
-    "bytes": 94571,
-    "sha256": "449dcdc1a1c00ff7fd8adcf989f6e6e008b8d97dbef0b510bcef6e29123a0e48"
+    "bytes": 476208,
+    "sha256": "6587865413886875fa139eae40940497c885155a6f975e12010834907aeaeb5b"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/DLY/Sweep Echo.png",
-    "bytes": 195541,
-    "sha256": "0885c50ceb73f1bcec34c1df39eac9b77b92f1ad2cffc3c49c9dbe21227c7bab"
+    "bytes": 525247,
+    "sha256": "1e788f142a749bf4c19e67c00ebc0b6cf50214ff9ea5e3c3560181d02fd8edba"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/DLY/Sweet Echo.png",
-    "bytes": 213178,
-    "sha256": "2a67889809cd8459e49286b8cabde079365438c10b3f07374741d1fcb40dbabe"
+    "bytes": 431576,
+    "sha256": "73da0d89da0924eca4b4bee17c85eae1f6245cc3ff0a69888583f5390870650f"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/DLY/Tape Delay S.png",
-    "bytes": 79790,
-    "sha256": "c31851b40c3b02f6222bb7c24451b9ac70c4bb03701e0a2e45fdd395ae348406"
+    "bytes": 418556,
+    "sha256": "e45385be8557ce7f5e7ebc7c0bd16ee9806825953609add331e04ed64e8f8523"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/DLY/Tape.png",
-    "bytes": 91871,
-    "sha256": "0ee33c73b2041ac83c52f97974b1ad4c734812ac1887e55d3f761fe638257197"
+    "bytes": 398260,
+    "sha256": "7cfd3a30c6c8b437e8087fa811557552d7f3265d092885a89a2924d3aae4035e"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/DLY/Tube.png",
-    "bytes": 126000,
-    "sha256": "b251363054ae63ffbf9e500b317cd85681f7906d40a38e95be926279d1148b1c"
+    "bytes": 90318,
+    "sha256": "90c93a6e8c7140071182babdb272b0d7abc7e44a6940e391d5544edb094d9e8e"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/DLY/Vintage Rack.png",
-    "bytes": 185878,
-    "sha256": "487b4afd8c5cd5a30ab374730efe121b9966f0a656fdb9439d4a0569cf3780c5"
+    "bytes": 103138,
+    "sha256": "a9437888268195da7153ccd12cff649d7fa637ad81389c0ef2360837eb06cd30"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/DST/14 Boost.png",
@@ -1861,78 +1861,78 @@
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/RVB/Amp Spring.png",
-    "bytes": 589475,
-    "sha256": "4a15fb09083d1f00559d76b0bd25e1fdfd9d0b3b8ae7d52c38701dfaf298274e"
+    "bytes": 678885,
+    "sha256": "8d4bbb640a2ee2bee52b8246fa9a24047fac0939b64d716b61880538ecfb7632"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/RVB/Arena.png",
-    "bytes": 175694,
-    "sha256": "6094f269ec2d7cc52860fcc621ca2000e15e0b1825396a6ed675584e7e21e547"
+    "bytes": 603498,
+    "sha256": "7439aa6f88905c3fb29432525abe9579b4f60418bdec693585199db5c2014b1b"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/RVB/Church.png",
-    "bytes": 268634,
-    "sha256": "758ef79e234063ddb2dd6981b961027e65bc37c417444ee5f633495db8906d06"
+    "bytes": 598372,
+    "sha256": "a5ec114e5ef7d28ad1cefc5ca22663c80eb263b49bfcc20cafeca9777dabe925"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/RVB/Club.png",
-    "bytes": 109150,
-    "sha256": "913ff84090d35f52fc94ade3f157f3a76f6c962856c5eb445f82b97c8e72f26c"
+    "bytes": 560488,
+    "sha256": "39fb5f0f49eeccd6bd3fad1cfbd9578ac320d16da459881a81de664562f8929c"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/RVB/Concert.png",
-    "bytes": 208706,
-    "sha256": "96895e0bbb01883e381d9ae3234330446ba9ceb6b94b51e6f14511e52a9078dd"
+    "bytes": 566213,
+    "sha256": "3360efe2a0da1079843e0d858941e67a71bf15e7e45e053e032ac57e5e42599e"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/RVB/Deepsea.png",
-    "bytes": 241688,
-    "sha256": "328023b5391962ba73e23c3fc7321b25f832f49164d38015fcff113f54b1adbc"
+    "bytes": 626129,
+    "sha256": "40242048dc475c61e7ad38bf7d1c6778561eb495434c162a93ff8dd5e806c52e"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/RVB/Hall.png",
-    "bytes": 253137,
-    "sha256": "1c1913c4f92687c13dd45dbc63450b03ae2f46d8fa65ad886feaaf934db5d30e"
+    "bytes": 656286,
+    "sha256": "0d44e7b9231ad7ab9ac590f6e99d6cf2179ac2cd1584dd789fa2bac2f579e3d4"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/RVB/N-Star.png",
-    "bytes": 259797,
-    "sha256": "dd1d904d73122a0e9027511f123eeac0a01544da5989457af1b238e383eee1d0"
+    "bytes": 817974,
+    "sha256": "bffda34c74ef15306d80b7c5d34539efb24eacd5121eb94382e104f36597fa37"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/RVB/Plate.png",
-    "bytes": 249509,
-    "sha256": "2286882c0880cd41a759e044cb8ae23f82cb84e6af87f302fa7d58ec9e80fd58"
+    "bytes": 652052,
+    "sha256": "10b72b73b021aed66abcbd399fbb9f34c66602a97cf214c065b85c3bfbe03880"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/RVB/Room.png",
-    "bytes": 220537,
-    "sha256": "7e5aabdc70e1ba43992c960b08b1200285eda6ceaf8a033b4b964b6c0d11fcd9"
+    "bytes": 589021,
+    "sha256": "1e798a887e5a96211c9de48b278ebe93f95cf1f501139fa3d41e8e5ab1745ba7"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/RVB/Shimmer.png",
-    "bytes": 223743,
-    "sha256": "ff8398482d9dddd6389b177f12ccf90ae4798bb0b75c65b3476e86127e8d2cd1"
+    "bytes": 768072,
+    "sha256": "d8c9028e35cd99aff0b1d44c7bba1a31e882c2a4ae42204978bafdbc8fbc1278"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/RVB/Spring.png",
-    "bytes": 259845,
-    "sha256": "d93f0de060f95748933681b9e5863ccd4c3a06d89eeabc3142e91430711f21f4"
+    "bytes": 691245,
+    "sha256": "3b5f4f464cc1660a987ef1e69b74287ed11d29d66ef3a184f1eee63f476beecf"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/RVB/Studio.png",
-    "bytes": 292268,
-    "sha256": "a32825412d86f048be89c3c941e73481a5c3f91d4ec3d76ce34f1260e200bbb0"
+    "bytes": 634268,
+    "sha256": "cefcd37c7c450d02aece3b2357a876a11751c9badade78a15fa10b0133672715"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/RVB/Sweet Space.png",
-    "bytes": 239612,
-    "sha256": "3155232426e55aa923e8f981f58b5be874a5194d435a21a8934ffac3eec520e9"
+    "bytes": 685178,
+    "sha256": "5f59dfb32361d8a213a92b1611dcd0584131827e9b7cbe57240703b8746308ac"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/RVB/Tube Spring.png",
-    "bytes": 630903,
-    "sha256": "a63ed5252468b85aaf14b56e92b17118a57e23b9a2ae4d64ccb5718b82dab7a6"
+    "bytes": 749955,
+    "sha256": "8fd761929aaeaf5b7d5b3e18219ef3da3793e690ffc9569dd058a40930520798"
   },
   {
     "path": "Editor/Data/OfficialImages/effects_bg/VOL/Volume.png",
@@ -2241,8 +2241,8 @@
   },
   {
     "path": "Editor/Source/UI/EditorWindow.cs",
-    "bytes": 54627,
-    "sha256": "d32c6cb56f97bdb13827b1f5bf3b3dfca5563468daea2a01223fd24311e92e9b"
+    "bytes": 54812,
+    "sha256": "609db93345c41db905111ee28d88ef407e74cf060de0e9eccc107c5634c580ec"
   },
   {
     "path": "Editor/Source/UI/EditorWorkspace.cs",
@@ -2261,8 +2261,8 @@
   },
   {
     "path": "Editor/Source/UI/HelpWindow.cs",
-    "bytes": 11421,
-    "sha256": "1a686561e67ceefa5e26847bc8ae5fbf4fa3ee4867375450381f15df8d5d1f36"
+    "bytes": 11420,
+    "sha256": "cc5efdd0300c4a385fb4f9f944a16dc5ea624156c3e200f30957a8a64d66a54f"
   },
   {
     "path": "Editor/Source/UI/IrImportWindow.cs",
@@ -2291,8 +2291,8 @@
   },
   {
     "path": "Editor/Source/UI/PatchSettingsWindow.cs",
-    "bytes": 14578,
-    "sha256": "afc19c68db69970974ea662a182dc3926887aa43c50b6ad11aa098772f21e1d8"
+    "bytes": 14562,
+    "sha256": "298055276acc3b30ed0321c09001927d09dfc56809e942147bd89bf65feacf31"
   },
   {
     "path": "Editor/Source/UI/PresetRenameWindow.cs",
@@ -5971,8 +5971,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 3692,
-    "sha256": "c3fe5df2e06cc8a77d04f9f0b8613a631b897bc86397065c99d18b0bc13ff228"
+    "bytes": 1256,
+    "sha256": "141f8f997c0f6a68a8afe3c0457b9cc9b1d6d81f806a6f95fb497cc9a71f8a8d"
   },
   {
     "path": "scripts/build-app.ps1",
@@ -6018,5 +6018,10 @@
     "path": "Editor/Data/OfficialImages/effects_bg/NAM/NAM_SnapTone.png",
     "bytes": 786878,
     "sha256": "242445c3c409f8cf3983377e8c99d1e1bab7a7c29550a346ec154f2c74f8bdf7"
+  },
+  {
+    "path": "Editor/Source/UI/CtrlAssignmentView.cs",
+    "bytes": 1333,
+    "sha256": "3c202947659b106723fb69d4d2c4c1c37e2905406c3e850df870554bcba8a97b"
   }
 ]

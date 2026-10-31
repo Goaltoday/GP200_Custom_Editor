@@ -508,9 +508,16 @@ public sealed partial class EditorWindow:Window
         foreach(var ctrl in current!.Document.Controls)
         {
             var block=new StackPanel{Margin=new Thickness(0,0,0,24)};block.Children.Add(Text(UiText.T($"CTRL {ctrl.Slot+1}"),17,FontWeights.SemiBold));
-            var checks=new List<CheckBox>();var flow=new WrapPanel{Margin=new Thickness(0,10,0,12)};
-            for(int i=0;i<11;i++){var check=new CheckBox{Content=EffectLabel(current.Document,i),IsChecked=(ctrl.Mask&(1u<<i))!=0,Foreground=TextBrush,Margin=new Thickness(0,0,16,10)};checks.Add(check);flow.Children.Add(check);}
-            foreach(var check in checks)check.Click+=(_,_)=>Guard(()=>{uint mask=0;for(int i=0;i<11;i++)if(checks[i].IsChecked==true)mask|=1u<<i;Edit(d=>d.SetCtrl(ctrl.Slot,mask));});block.Children.Add(flow);p.Children.Add(block);
+            var flow=new WrapPanel{Margin=new Thickness(0,10,0,12)};
+            var document=current.Document;
+            for(int visual=0;visual<document.Chain.Length;visual++)
+            {
+                int owner=CtrlAssignmentView.OwnerAt(document,visual);
+                var check=new CheckBox{Content=CtrlAssignmentView.CardLabel(catalog,document,visual,owner),Tag=owner,IsChecked=CtrlAssignmentView.IsAssigned(ctrl.Mask,owner),Foreground=TextBrush,Margin=new Thickness(0,0,16,10)};
+                check.Click+=(_,_)=>Guard(()=>Edit(d=>CtrlAssignmentView.SetAssigned(d,ctrl.Slot,owner,check.IsChecked==true)));
+                flow.Children.Add(check);
+            }
+            block.Children.Add(flow);p.Children.Add(block);
         }
         return p;
     }

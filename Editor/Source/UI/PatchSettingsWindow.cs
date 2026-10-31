@@ -104,15 +104,15 @@ public sealed class PatchSettingsWindow:Window
 
         }
 
-        var assignment=read().Controls.First(c=>c.Slot==controller);var blocks=new WrapPanel();panel.Children.Add(blocks);
+        var document=read();int ctrlSlot=controller;var assignment=document.Controls.First(c=>c.Slot==ctrlSlot);var blocks=new WrapPanel();panel.Children.Add(blocks);
 
-        for(int module=0;module<11;module++)
+        for(int visual=0;visual<document.Chain.Length;visual++)
 
         {
 
-            int captured=module;var check=new CheckBox{Content=catalog.IsMx42?$"{module+1:00} · {catalog.FamilyLabel(module,read().GetEffect(module).Code)}":PresetDocument.Modules[module],IsChecked=(assignment.Mask&(1u<<module))!=0,Foreground=Ink,FontSize=12,Width=88,Margin=new Thickness(4,8,4,8)};
+            int owner=CtrlAssignmentView.OwnerAt(document,visual);var check=new CheckBox{Content=CtrlAssignmentView.CardLabel(catalog,document,visual,owner),Tag=owner,IsChecked=CtrlAssignmentView.IsAssigned(assignment.Mask,owner),Foreground=Ink,FontSize=12,Width=112,Margin=new Thickness(4,8,4,8)};
 
-            check.Click+=(_,_)=>Change(d=>{var old=d.Controls.Single(c=>c.Slot==controller).Mask;d.SetCtrl((byte)controller,(check.IsChecked==true?old|(1u<<captured):old&~(1u<<captured))&0x7ff);});blocks.Children.Add(check);
+            check.Click+=(_,_)=>Change(d=>CtrlAssignmentView.SetAssigned(d,(byte)ctrlSlot,owner,check.IsChecked==true));blocks.Children.Add(check);
 
         }
 
