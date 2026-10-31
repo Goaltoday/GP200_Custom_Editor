@@ -32,3 +32,7 @@ You can copy from the Valeton official images or create yours.
 ## Download.
 You can build it from the code or download from release.
 
+https://github.com/Goaltoday/GP200_Custom_Editor/releases/tag/0.1
+
+
+
