@@ -2216,8 +2216,8 @@
   },
   {
     "path": "Editor/Source/Transport/ReadOnlyMidi.cs",
-    "bytes": 17669,
-    "sha256": "7cea5c35d14bf44b0fe638ab4396be3d9a3baf2b44f460fe0a15e1a5e560112c"
+    "bytes": 18469,
+    "sha256": "e1e957bd8fd51fe3af8eb2e56672f6496e13669b8d3e8685460858e38bd934a1"
   },
   {
     "path": "Editor/Source/UI/ChainControls.cs",

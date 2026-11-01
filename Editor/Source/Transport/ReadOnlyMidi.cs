@@ -105,13 +105,27 @@ public static class ReadOnlyMidi
     }
     static uint FindInput()
     {
-        var matches=new List<uint>();for(uint i=0;i<midiInGetNumDevs();i++){Check(midiInGetDevCapsW((UIntPtr)i,out var caps,(uint)Marshal.SizeOf<InCaps>()),UiText.T("Enumerar entrada"));if(caps.Name=="GP-200")matches.Add(i);}
-        return matches.Count==1?matches[0]:throw new IOException(UiText.T("Se necesita una única entrada MIDI con nombre GP-200."));
+        var devices=new List<(uint Id,string Name)>();
+        for(uint i=0;i<midiInGetNumDevs();i++){Check(midiInGetDevCapsW((UIntPtr)i,out var caps,(uint)Marshal.SizeOf<InCaps>()),UiText.T("Enumerar entrada"));devices.Add((i,caps.Name));}
+        return SelectGp200Port(devices,"input");
     }
     static uint FindOutput()
     {
-        var matches=new List<uint>();for(uint i=0;i<midiOutGetNumDevs();i++){Check(midiOutGetDevCapsW((UIntPtr)i,out var caps,(uint)Marshal.SizeOf<OutCaps>()),UiText.T("Enumerar salida"));if(caps.Name=="GP-200")matches.Add(i);}
-        return matches.Count==1?matches[0]:throw new IOException(UiText.T("Se necesita una única salida MIDI con nombre GP-200."));
+        var devices=new List<(uint Id,string Name)>();
+        for(uint i=0;i<midiOutGetNumDevs();i++){Check(midiOutGetDevCapsW((UIntPtr)i,out var caps,(uint)Marshal.SizeOf<OutCaps>()),UiText.T("Enumerar salida"));devices.Add((i,caps.Name));}
+        return SelectGp200Port(devices,"output");
+    }
+    internal static uint SelectGp200Port(IEnumerable<(uint Id,string Name)> devices,string direction)
+    {
+        var ports=devices.ToArray();
+        var matches=ports.Where(p=>!string.IsNullOrWhiteSpace(p.Name)
+            &&!p.Name.Contains("Subdevice",StringComparison.OrdinalIgnoreCase)
+            &&System.Text.RegularExpressions.Regex.IsMatch(p.Name,@"(?<![A-Za-z0-9])GP[\s-]*200(?![A-Za-z0-9])",System.Text.RegularExpressions.RegexOptions.IgnoreCase|System.Text.RegularExpressions.RegexOptions.CultureInvariant)).ToArray();
+        if(matches.Length==1)return matches[0].Id;
+        string detail=string.Join(", ",ports.Select(p=>$"{p.Id}: {p.Name}"));
+        throw new IOException(matches.Length==0
+            ?$"No main GP-200 MIDI {direction} port found. Available ports: {detail}"
+            :$"Multiple main GP-200 MIDI {direction} ports found. Connect one GP-200 only. Available ports: {detail}");
     }
     static DeviceResponse Query(ReadQuery query,int slot,byte[] request,bool edit=false,IReadOnlyList<byte[]>? fragments=null,Func<IReadOnlyList<WireRecord>,bool>? match=null,bool generic=false,int timeoutMs=3000,bool integrationPacing=false)
     {
