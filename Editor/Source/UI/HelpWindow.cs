@@ -11,6 +11,8 @@ public sealed record AppPreferences
 {
     public string Language {get;init;}="en";
     public string DeviceProfile {get;init;}="MX42";
+    public string MidiInputName {get;init;}="";
+    public string MidiOutputName {get;init;}="";
     public bool NeedsProfileSelection {get;init;}
     public static bool ProfileSelectionRequired {get;private set;}
     public static string? LoadWarning {get;private set;}

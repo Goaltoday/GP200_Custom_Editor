@@ -103,17 +103,28 @@ public static class ReadOnlyMidi
     {
         try{_=FindInput();_=FindOutput();return true;}catch(IOException){return false;}
     }
-    static uint FindInput()
+    static readonly Lazy<AppPreferences> portPreferences=new(AppPreferences.Load);
+    public static IReadOnlyList<(uint Id,string Name)> InputPorts()
     {
         var devices=new List<(uint Id,string Name)>();
         for(uint i=0;i<midiInGetNumDevs();i++){Check(midiInGetDevCapsW((UIntPtr)i,out var caps,(uint)Marshal.SizeOf<InCaps>()),UiText.T("Enumerar entrada"));devices.Add((i,caps.Name));}
-        return SelectGp200Port(devices,"input");
+        return devices;
     }
-    static uint FindOutput()
+    public static IReadOnlyList<(uint Id,string Name)> OutputPorts()
     {
         var devices=new List<(uint Id,string Name)>();
         for(uint i=0;i<midiOutGetNumDevs();i++){Check(midiOutGetDevCapsW((UIntPtr)i,out var caps,(uint)Marshal.SizeOf<OutCaps>()),UiText.T("Enumerar salida"));devices.Add((i,caps.Name));}
-        return SelectGp200Port(devices,"output");
+        return devices;
+    }
+    static uint FindInput()=>SelectConfiguredPort(InputPorts(),portPreferences.Value.MidiInputName,"input");
+    static uint FindOutput()=>SelectConfiguredPort(OutputPorts(),portPreferences.Value.MidiOutputName,"output");
+    internal static uint SelectConfiguredPort(IEnumerable<(uint Id,string Name)> devices,string? selected,string direction)
+    {
+        var ports=devices.ToArray();
+        if(string.IsNullOrEmpty(selected))return SelectGp200Port(ports,direction);
+        var matches=ports.Where(p=>string.Equals(p.Name,selected,StringComparison.Ordinal)).ToArray();
+        if(matches.Length==1)return matches[0].Id;
+        throw new IOException($"Selected MIDI {direction} port '{selected}' is {(matches.Length==0?"unavailable":"ambiguous")}. Review Settings > MIDI ports. No alternative port was selected.");
     }
     internal static uint SelectGp200Port(IEnumerable<(uint Id,string Name)> devices,string direction)
     {

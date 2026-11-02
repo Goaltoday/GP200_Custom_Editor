@@ -74,6 +74,7 @@ public sealed partial class SettingsWindow:Window
     void AddProfileAndLanguageTabs()
     {
         var profile=Tab("Device profile");profile.Children.Add(new DeviceProfilePanel());
+        var ports=Tab("MIDI ports");ports.Children.Add(new MidiPortsPanel());
         var languagePanel=Tab("Language");
         var language=new ComboBox{ItemsSource=new[]{"English","Español"},SelectedIndex=UiText.Language=="en"?0:1,Width=180,HorizontalAlignment=HorizontalAlignment.Left};
         languagePanel.Children.Add(language);

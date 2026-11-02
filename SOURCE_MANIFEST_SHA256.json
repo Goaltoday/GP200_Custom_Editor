@@ -2216,8 +2216,8 @@
   },
   {
     "path": "Editor/Source/Transport/ReadOnlyMidi.cs",
-    "bytes": 18469,
-    "sha256": "e1e957bd8fd51fe3af8eb2e56672f6496e13669b8d3e8685460858e38bd934a1"
+    "bytes": 19419,
+    "sha256": "491d7aefd6f74e4e967ff047169f3341b9acffeb78c68a6e087b393a1ab6bc0e"
   },
   {
     "path": "Editor/Source/UI/ChainControls.cs",
@@ -2261,8 +2261,8 @@
   },
   {
     "path": "Editor/Source/UI/HelpWindow.cs",
-    "bytes": 11420,
-    "sha256": "cc5efdd0300c4a385fb4f9f944a16dc5ea624156c3e200f30957a8a64d66a54f"
+    "bytes": 11519,
+    "sha256": "bc9f9d792044055d2c55cd9e68b3c964a3c7279a24b65633389cefe86dd8b6da"
   },
   {
     "path": "Editor/Source/UI/IrImportWindow.cs",
@@ -2321,8 +2321,8 @@
   },
   {
     "path": "Editor/Source/UI/SettingsWindow.cs",
-    "bytes": 13284,
-    "sha256": "3bd4c696fc325b0147e5b4142e5521f2dbbdffa2322523cfab90e348ce42ac49"
+    "bytes": 13363,
+    "sha256": "c50b0aa5f80a1c77180e9ce4c1d96cd43acc6a4b2a776418a9cf4d0fbef0b710"
   },
   {
     "path": "Editor/Source/UI/SnapToneImportWindow.cs",
@@ -6023,5 +6023,10 @@
     "path": "Editor/Source/UI/CtrlAssignmentView.cs",
     "bytes": 1333,
     "sha256": "3c202947659b106723fb69d4d2c4c1c37e2905406c3e850df870554bcba8a97b"
+  },
+  {
+    "path": "Editor/Source/UI/MidiPortsPanel.cs",
+    "bytes": 3517,
+    "sha256": "21c575903b1df37c6e713753624825b894ebe3284185bd00ee70a82e8de20341"
   }
 ]
