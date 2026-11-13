@@ -106,7 +106,7 @@ public sealed partial class EditorWindow
             {
                 var snapshot=await session.ReadCurrentAsync();
                 if(live!=session||liveBusy||livePump||snapshot.Index!=slot)return;
-                session.AcceptSnapshot(snapshot);liveEntry!.Document=snapshot;liveEntry.EditingBaseline=snapshot.ToBytes();liveEntry.Undo.Clear();liveEntry.Redo.Clear();desiredLive=null;pendingLive=null;
+                session.AcceptSnapshot(snapshot);liveEntry!.Document=snapshot;desiredLive=null;pendingLive=null;
                 RefreshLibrary();if(current==liveEntry)Render();
             }
         }
@@ -129,7 +129,6 @@ public sealed partial class EditorWindow
             var after=await session.ReadCurrentAsync();if(after.Index!=before.Index)throw new IOException("Active preset changed during Scene command. No command was repeated.");
             if(command>=3&&actual!=(command-3)%4||command==1&&actual!=4||command==2&&actual==4)throw new IOException("The GP-200 did not confirm the requested Scene operation. No command was repeated.");
             session.AcceptSnapshot(after);entry.Document=after;if(command>=7)entry.MarkSceneCaptured();desiredLive=null;pendingLive=null;
-            if(command<7){entry.EditingBaseline=after.ToBytes();entry.Undo.Clear();entry.Redo.Clear();}
             EditorAuditLog.SupplementBytes(Path.Combine(folder,"after.prst"),after.ToBytes());
             RefreshLibrary();Render();nextSceneStatus=DateTime.UtcNow.AddSeconds(2);
             status.Text=command>=7?(UiText.Language=="es"?$"Escena {(char)('A'+command-7)} capturada. Guardar conserva las escenas.":$"Scene {(char)('A'+command-7)} captured. Save to retain Scenes."):(actual<4?$"Scene {(char)('A'+actual)}":actual==4?"Scenes OFF":"Scenes ON");

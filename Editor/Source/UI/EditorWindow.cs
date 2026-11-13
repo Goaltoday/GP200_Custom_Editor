@@ -223,6 +223,9 @@ public sealed partial class EditorWindow:Window
                     RefreshLibrary();if(current==entry)Render();
                     status.Text=UiText.T("Guardado y verificado en GP-200.");
                 }
+                else if(live==session&&liveEntry==entry&&entry.ScenesDirty&&
+                    PresetComparison.EquivalentFunctional(entry.Document,stored,catalog))
+                    status.Text=UiText.T("PRST guardado; persistencia de Scenes sin verificar. La captura sigue pendiente.");
             }
         }
         catch(Exception error){if(live==session){DeviceSession.Current.Reset();live=null;liveEntry=null;liveButton.Content=UiText.T("Conectar · edición en vivo");Title=UiText.T("GP200 Replica · Editor local");status.Text=UiText.T("Conexión interrumpida: ")+error.Message;}}
