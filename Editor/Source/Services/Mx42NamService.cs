@@ -84,13 +84,15 @@ internal static class Mx42NamService
 
     }
 
-    internal static async Task Run(IMx42NamTransport transport,byte[] record,int slot,string directory,IProgress<string>? progress=null)
+    internal static async Task Run(IMx42NamTransport transport,byte[]? record,int slot,string directory,IProgress<string>? progress=null,Func<byte[],byte[]>? fromPrevious=null)
 
     {
 
-        Mx42NamCodec.Validate(record,slot);if(!transport.RecoveryGuard)throw new NotSupportedException("Install the matching NAM boot-recovery firmware extension before loading. No data was sent.");if(!transport.Available||transport.Chunk is <1 or >1024)throw new NotSupportedException("Direct NAM32 USB loader capability is unavailable.");
+        if(fromPrevious==null)Mx42NamCodec.Validate(record??throw new ArgumentNullException(nameof(record)),slot);
+        if(!transport.RecoveryGuard)throw new NotSupportedException("Install the matching NAM boot-recovery firmware extension before loading. No data was sent.");if(!transport.Available||transport.Chunk is <1 or >1024)throw new NotSupportedException("Direct NAM32 USB loader capability is unavailable.");
 
         Directory.CreateDirectory(directory);string stage="preflight";int commitAttempts=0;
+        byte[]? previousRecord=null,requestedRecord=null;
 
         void State(string? error=null,bool required=false)
         {
@@ -114,7 +116,10 @@ internal static class Mx42NamService
 
             var info=Info(await transport.Request(0,arg0:(uint)slot),slot);if(info.Flags!=0)throw new InvalidOperationException("Destination NAM is selected, loaded or transitioning; no upload started.");
 
-            var previous=await Read(transport,info);File.WriteAllBytes(Path.Combine(directory,"previous-record.bin"),previous);File.WriteAllText(Path.Combine(directory,"previous-info.json"),JsonSerializer.Serialize(new{info,sha256=Convert.ToHexString(SHA256.HashData(previous))}));
+            var previous=await Read(transport,info);previousRecord=previous;File.WriteAllBytes(Path.Combine(directory,"previous-record.bin"),previous);File.WriteAllText(Path.Combine(directory,"previous-info.json"),JsonSerializer.Serialize(new{info,sha256=Convert.ToHexString(SHA256.HashData(previous))}));
+            var upload=fromPrevious==null?record!:fromPrevious(previous);Mx42NamCodec.Validate(upload,slot);
+            requestedRecord=upload;
+            if(fromPrevious!=null&&upload.SequenceEqual(previous))throw new InvalidOperationException("The NAM already has this name. No upload started.");
 
             var checkedPreset=await transport.Active();Unused(checkedPreset);if(before.Index!=checkedPreset.Index||!PresetComparison.EquivalentFunctional(before,checkedPreset,CatalogRuntime.Current))throw new IOException("Active preset changed during NAM preflight. No upload started.");
 
@@ -124,29 +129,57 @@ internal static class Mx42NamService
 
             stage="staging";State();
 
-            for(int offset=0;offset<record.Length;offset+=transport.Chunk)
+            for(int offset=0;offset<upload.Length;offset+=transport.Chunk)
 
             {
 
-                var chunk=record.AsSpan(offset,Math.Min(transport.Chunk,record.Length-offset)).ToArray();var ack=await transport.Request(2,info.Revision,(uint)offset,token,chunk);Check(ack);
+                var chunk=upload.AsSpan(offset,Math.Min(transport.Chunk,upload.Length-offset)).ToArray();var ack=await transport.Request(2,info.Revision,(uint)offset,token,chunk);Check(ack);
 
-                if(ack.Revision!=info.Revision||ack.Arg0!=offset+chunk.Length||ack.Arg1!=token||ack.Payload.Length!=0)throw new IOException("NAM CHUNK cursor/session differs; upload was not repeated.");File.WriteAllText(Path.Combine(directory,$"chunk-{offset:0000}-ack.json"),JsonSerializer.Serialize(ack));progress?.Report($"NAM {offset+chunk.Length}/{record.Length}");
+                if(ack.Revision!=info.Revision||ack.Arg0!=offset+chunk.Length||ack.Arg1!=token||ack.Payload.Length!=0)throw new IOException("NAM CHUNK cursor/session differs; upload was not repeated.");File.WriteAllText(Path.Combine(directory,$"chunk-{offset:0000}-ack.json"),JsonSerializer.Serialize(ack));progress?.Report($"NAM {offset+chunk.Length}/{upload.Length}");
 
             }
 
             stage="commit-sent-or-uncertain";commitAttempts=1;State(required:true);progress?.Report("Writing NAM and verifying storage…");var committed=await transport.Request(3,info.Revision,(uint)slot,token);Check(committed);EditorAuditLog.Supplement(Path.Combine(directory,"commit-ack.json"),committed);
 
-            uint crc=Mx42NamCodec.Crc(record);if(committed.Arg0!=Mx42NamCodec.Size||committed.Arg1!=slot||committed.Revision!=crc||!committed.Payload.SequenceEqual(record.AsSpan(0,64).ToArray()))throw new IOException("NAM COMMIT did not confirm the exact record. Do not repeat the upload.");
+            uint crc=Mx42NamCodec.Crc(upload);if(committed.Arg0!=Mx42NamCodec.Size||committed.Arg1!=slot||committed.Revision!=crc||!committed.Payload.SequenceEqual(upload.AsSpan(0,64).ToArray()))throw new IOException("NAM COMMIT did not confirm the exact record. Do not repeat the upload.");
 
             stage="physical-readback";State();progress?.Report("Reading back the complete NAM record…");var actual=await Read(transport,new(slot,Mx42NamCodec.Header(committed.Payload,slot),crc,0));EditorAuditLog.SupplementBytes(Path.Combine(directory,"readback-record.bin"),actual);
 
-            if(!actual.SequenceEqual(record))throw new IOException("NAM physical readback differs. Do not repeat the upload.");
+            if(!actual.SequenceEqual(upload))throw new IOException("NAM physical readback differs. Do not repeat the upload.");
 
             stage="readback-verified";State();progress?.Report("Refreshing installed NAM names…");await transport.RefreshNames();stage="complete";State();
 
         }
 
-        catch(Exception error){State(error.ToString());if(stage=="readback-verified")throw new IOException("NAM full physical readback was VERIFIED, but names could not be refreshed. Do not upload again. Logs: "+directory,error);throw;}
+        catch(Exception error)
+        {
+            State(error.ToString());
+            if(fromPrevious!=null&&commitAttempts==1&&previousRecord!=null&&requestedRecord!=null&&stage!="readback-verified")
+            {
+                byte[] observed;
+                try
+                {
+                    var info=Info(await transport.Request(0,arg0:(uint)slot),slot);
+                    observed=await Read(transport,info);
+                    EditorAuditLog.SupplementBytes(Path.Combine(directory,"rename-diagnostic-record.bin"),observed);
+                }
+                catch(Exception diagnostic)
+                {
+                    throw new IOException("NAM rename COMMIT is uncertain and read-only INFO/READ could not resolve it. Do not retry; inspect the device. Backup: "+directory,new AggregateException(error,diagnostic));
+                }
+                if(observed.SequenceEqual(requestedRecord))
+                {
+                    stage="readback-verified";State();
+                    try{await transport.RefreshNames();}
+                    catch(Exception refresh){throw new IOException("NAM rename was physically verified, but names could not be refreshed. Do not upload again. Backup: "+directory,refresh);}
+                    stage="complete";State();return;
+                }
+                if(observed.SequenceEqual(previousRecord))throw new IOException("NAM rename was not applied; the previous complete record remains on the device. No retry was sent. Backup: "+directory,error);
+                throw new IOException("NAM rename result differs from both the previous and requested records. Do not retry. Backup: "+directory,error);
+            }
+            if(stage=="readback-verified")throw new IOException("NAM full physical readback was VERIFIED, but names could not be refreshed. Do not upload again. Logs: "+directory,error);
+            throw;
+        }
 
     }
 
@@ -162,6 +195,16 @@ internal static class Mx42NamService
 
         await DeviceMidi.OperationGate.WaitAsync();try{await Run(new Mx42NamDeviceTransport(),record,slot,directory,progress);}finally{DeviceMidi.OperationGate.Release();}return directory;
 
+    }
+    internal static async Task<string> Rename(int slot,string name,IProgress<string>? progress=null)
+    {
+        Mx42NamCodec.Slot(slot);Mx42NamCodec.Name(name);
+        var directory=Path.Combine(RecoveryRoot,$"{DateTime.UtcNow:yyyyMMdd-HHmmssfff}-{Guid.NewGuid():N}");Directory.CreateDirectory(directory);
+        File.WriteAllText(Path.Combine(directory,"request.json"),JsonSerializer.Serialize(new{schema="gp200-mx42-native-nam-rename/v1",slot,name},new JsonSerializerOptions{WriteIndented=true}));
+        await DeviceMidi.OperationGate.WaitAsync();
+        try{await Run(new Mx42NamDeviceTransport(),null,slot,directory,progress,previous=>Mx42NamCodec.Renamed(previous,slot,name));}
+        finally{DeviceMidi.OperationGate.Release();}
+        return directory;
     }
 
 }

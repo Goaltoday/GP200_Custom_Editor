@@ -11,6 +11,15 @@ internal static class Mx42NamCodec
         Slot(slot);Name(name);if(weights.Length!=Weights)throw new InvalidDataException("Expected 1871 ordered NAM weights.");
         byte[] record=new byte[Size];BinaryPrimitives.WriteUInt32LittleEndian(record,NamRecordLayout.Magic);BinaryPrimitives.WriteUInt32LittleEndian(record.AsSpan(NamRecordLayout.Slot),(uint)slot);BinaryPrimitives.WriteUInt32LittleEndian(record.AsSpan(NamRecordLayout.WeightsCrc),Crc(weights));BinaryPrimitives.WriteUInt32LittleEndian(record.AsSpan(NamRecordLayout.ArchitectureAt),NamRecordLayout.Architecture);Encoding.ASCII.GetBytes(name).CopyTo(record,NamRecordLayout.Name);weights.CopyTo(record,NamRecordLayout.Header);Validate(record,slot);return record;
     }
+    internal static byte[] Renamed(byte[] original,int slot,string name)
+    {
+        Name(name);Validate(original,slot);
+        var renamed=(byte[])original.Clone();
+        renamed.AsSpan(NamRecordLayout.Name,NamRecordLayout.NameBytes).Clear();
+        Encoding.ASCII.GetBytes(name).CopyTo(renamed,NamRecordLayout.Name);
+        Validate(renamed,slot);
+        return renamed;
+    }
     internal static void Slot(int slot){if(slot is <0 or >31)throw new ArgumentOutOfRangeException(nameof(slot));}
     internal static string Header(ReadOnlySpan<byte> header,int slot,bool allowEmpty=true)
     {

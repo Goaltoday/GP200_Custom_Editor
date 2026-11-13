@@ -15,7 +15,7 @@ public sealed class Mx42NamWindow:Window
 
     readonly TextBlock status=new(){TextWrapping=TextWrapping.Wrap,Margin=new Thickness(0,10,0,0)};
 
-    readonly List<Button> buttons=[];Button? load;bool busy;
+    readonly List<Button> buttons=[];Button? load,rename;bool busy;
 
     public Mx42NamWindow(bool readOnOpen=true)
 
@@ -54,6 +54,16 @@ public sealed class Mx42NamWindow:Window
             await Mx42NamService.Upload(file.Text,slot.Index,name.Text,new Progress<string>(x=>status.Text=x));await Read();status.Text=T("NAM loaded and full physical readback verified. No preset was selected or saved.","NAM cargado y lectura física íntegra verificada. No se seleccionó ni guardó ningún preset.");
 
         });actions.Children.Add(load);
+        rename=Add(T("Rename installed NAM","Renombrar NAM instalado"),async()=>
+        {
+            if(destination.SelectedItem is not Mx42NamSlot slot||!slot.CanLoad||slot.Name.Length==0)
+                throw new InvalidOperationException(T("Select an installed NAM slot that is not in use.","Selecciona un NAM instalado que no esté en uso."));
+            Mx42NamCodec.Name(name.Text);
+            if(slot.Name==name.Text)return;
+            if(UiDialogs.Show(this,T($"Rename NAM {slot.Index+1:00} from '{slot.Name}' to '{name.Text}'? The editor will back up and rewrite the full model, then verify it byte for byte.",$"¿Renombrar NAM {slot.Index+1:00} de '{slot.Name}' a '{name.Text}'? El editor respaldará y reescribirá el modelo completo y después lo verificará byte a byte."),"Rename NAM",MessageBoxButton.YesNo,MessageBoxImage.Question)!=MessageBoxResult.Yes)return;
+            await Mx42NamService.Rename(slot.Index,name.Text,new Progress<string>(x=>status.Text=x));
+            await Read();status.Text=T("NAM renamed and full physical readback verified.","NAM renombrado y lectura física íntegra verificada.");
+        });actions.Children.Add(rename);
 
 
         panel.Children.Add(actions);panel.Children.Add(status);
@@ -81,7 +91,13 @@ public sealed class Mx42NamWindow:Window
 
     }
 
-    void UpdateLoad(){if(load!=null)load.IsEnabled=!busy&&Mx42Integration.Supports(Mx42Capability.NamUpload|Mx42Capability.NamRecovery)&&destination.SelectedItem is Mx42NamSlot slot&&slot.CanLoad&&File.Exists(file.Text)&&name.Text.Trim().Length>0;}
+    void UpdateLoad()
+    {
+        var slot=destination.SelectedItem as Mx42NamSlot;
+        bool available=!busy&&Mx42Integration.Supports(Mx42Capability.NamUpload|Mx42Capability.NamRecovery)&&slot is {CanLoad:true}&&name.Text.Trim().Length>0;
+        if(load!=null)load.IsEnabled=available&&File.Exists(file.Text);
+        if(rename!=null)rename.IsEnabled=available&&slot!.Name.Length>0&&slot.Name!=name.Text;
+    }
     void ShowAvailability()
     {
         if(!Mx42Integration.Supports(Mx42Capability.NamUpload))status.Text=T("Installed firmware has no native NAM USB loader.","El firmware instalado no tiene cargador NAM USB nativo.");
